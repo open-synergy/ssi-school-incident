@@ -14,7 +14,7 @@
 <record id="school_academic_alert_level_manager_access" model="ir.model.access">
     <field name="name">school_academic_alert_level - manager</field>
     <field name="model_id" ref="model_school_academic_alert_level" />
-    <field name="group_id" ref="school_incident_manager_group" />
+    <field name="group_id" ref="school_academic_alert_level_group" />
     <field name="perm_read" eval="1" />
     <field name="perm_create" eval="1" />
     <field name="perm_write" eval="1" />

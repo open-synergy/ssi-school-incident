@@ -3,7 +3,7 @@
 > **Module:** ssi*school_incident\
 > **Model:** `school_incident_escalation_criteria`\
 > **Menu:** School > Configuration > Incident > Escalation Criteria\
-> **Actor:** user in group \_Manager (Principal)*
+> **Actor:** user in group \_Configurator: Incident Escalation Criteria*
 
 ## Pre-Condition
 

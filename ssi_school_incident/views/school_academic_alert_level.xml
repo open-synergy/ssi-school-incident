@@ -85,7 +85,7 @@
         name="Academic Alert Levels"
         parent="menu_incident_configuration"
         action="school_academic_alert_level_action"
-        groups="school_incident_manager_group"
+        groups="school_academic_alert_level_group"
         sequence="20"
     />
 

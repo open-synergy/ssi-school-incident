@@ -3,7 +3,7 @@
 > **Module:** ssi*school_incident\
 > **Model:** `school_academic_alert_level`\
 > **Menu:** School > Configuration > Incident > Academic Alert Levels\
-> **Actor:** user in group \_Manager (Principal)*
+> **Actor:** user in group \_Configurator: Academic Alert Level*
 
 ## Pre-Condition
 

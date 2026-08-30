@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 OpenSynergy Indonesia
+     Copyright 2026 PT. Simetri Sinergi Indonesia
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<odoo>
+<!-- Configurator group of school_incident_escalation_criteria, kept separate
+     from school_academic_alert_level_group and school_incident_type_group so
+     managing one master data model does not imply managing the others.
+     school_incident_manager_group implies this group (see
+     security/res_group_data.xml) so existing manager-group members keep
+     their access without a migration script. -->
+<record id="school_incident_escalation_criteria_group" model="res.groups">
+    <field name="name">Configurator: Incident Escalation Criteria</field>
+    <field name="category_id" ref="school_incident_configurator_module_category" />
+</record>
+</odoo>

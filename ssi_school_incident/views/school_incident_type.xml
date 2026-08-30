@@ -79,7 +79,7 @@
         name="Incident Types"
         parent="menu_incident_configuration"
         action="school_incident_type_action"
-        groups="school_incident_manager_group"
+        groups="school_incident_type_group"
         sequence="10"
     />
 

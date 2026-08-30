@@ -3,7 +3,7 @@
 > **Module:** ssi*school_incident\
 > **Model:** `school_incident_type`\
 > **Menu:** School > Configuration > Incident > Incident Types\
-> **Actor:** user in group \_Manager (Principal)*
+> **Actor:** user in group \_Configurator: Incident Type*
 
 ## Pre-Condition
 

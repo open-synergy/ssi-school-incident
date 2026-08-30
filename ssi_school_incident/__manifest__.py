@@ -20,9 +20,13 @@
         "ssi_transaction_cancel_mixin",
         "ssi_m2o_configurator_mixin",
         "ssi_localdict_mixin",
+        "web_tour",
     ],
     "data": [
         "security/ir_module_category_data.xml",
+        "security/res_groups/school_academic_alert_level.xml",
+        "security/res_groups/school_incident_escalation_criteria.xml",
+        "security/res_groups/school_incident_type.xml",
         "security/res_group_data.xml",
         "security/res_groups/school_academic_alert.xml",
         "security/res_groups/school_incident_weekly_review.xml",
@@ -59,5 +63,6 @@
         "views/school_incident.xml",
         "views/school_academic_alert.xml",
         "views/school_incident_weekly_review.xml",
+        "views/assets.xml",
     ],
 }
