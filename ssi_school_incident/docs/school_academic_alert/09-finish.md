@@ -20,6 +20,7 @@
 1. Open the **School > Incident > Academic Alerts** menu.
 2. Open the School Academic Alert record to finish.
 3. Click the **Done** button.
+4. Click **OK** on the confirmation dialog.
 
 ### Bulk (Multiple Records)
 

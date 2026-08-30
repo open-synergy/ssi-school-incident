@@ -22,6 +22,7 @@
 3. Click the **Cancel** button.
 4. In the wizard that appears, select the **Cancellation Reason**.
 5. Click **Confirm**.
+6. Click **OK** on the confirmation dialog.
 
 ### Bulk (Multiple Records)
 
@@ -36,6 +37,7 @@
 5. In the wizard that appears, select the **Cancellation Reason** — this single reason
    is applied to every selected record.
 6. Click **Confirm**.
+7. Click **OK** on the confirmation dialog.
 
 ## Post-Condition
 
