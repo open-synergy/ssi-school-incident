@@ -78,7 +78,7 @@ class TestUiSchoolAcademicAlert(HttpSavepointCase):
         cls.alert_confirm = cls.env["school_academic_alert"].create(
             {
                 "student_id": student_confirm.id,
-                "description": "Fixture academic alert used by the Confirm tour.",
+                "subject_note": "Confirm tour fixture",
             }
         )
 
@@ -86,7 +86,7 @@ class TestUiSchoolAcademicAlert(HttpSavepointCase):
         cls.alert_approve = cls.env["school_academic_alert"].create(
             {
                 "student_id": student_approve.id,
-                "description": "Fixture academic alert used by the Approve tour.",
+                "subject_note": "Approve tour fixture",
             }
         )
         cls.alert_approve.with_user(cls.admin).action_confirm()
@@ -102,7 +102,7 @@ class TestUiSchoolAcademicAlert(HttpSavepointCase):
         cls.alert_finish = cls.env["school_academic_alert"].create(
             {
                 "student_id": student_finish.id,
-                "description": "Fixture academic alert used by the Finish tour.",
+                "subject_note": "Finish tour fixture",
             }
         )
         cls.alert_finish.with_user(cls.admin).action_confirm()
@@ -116,7 +116,7 @@ class TestUiSchoolAcademicAlert(HttpSavepointCase):
         cls.alert_cancel = cls.env["school_academic_alert"].create(
             {
                 "student_id": student_cancel.id,
-                "description": "Fixture academic alert used by the Cancel tour.",
+                "subject_note": "Cancel tour fixture",
             }
         )
         cls.env["base.cancel_reason"].create(
