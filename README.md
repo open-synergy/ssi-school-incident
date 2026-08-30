@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[ssi_school_incident](ssi_school_incident/) | 14.0.1.2.2 |  | School Incident
+[ssi_school_incident](ssi_school_incident/) | 14.0.1.3.0 |  | School Incident
 [ssi_school_incident_operating_unit](ssi_school_incident_operating_unit/) | 14.0.1.2.0 |  | School Incident - Operating Unit
 
 [//]: # (end addons)
