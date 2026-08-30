@@ -21,6 +21,26 @@
                 type="text/javascript"
                 src="/ssi_school_incident/static/tests/tours/school_incident_type_tour.js"
             />
+        <script
+                type="text/javascript"
+                src="/ssi_school_incident/static/tests/tours/school_incident_create_tour.js"
+            />
+        <script
+                type="text/javascript"
+                src="/ssi_school_incident/static/tests/tours/school_incident_confirm_tour.js"
+            />
+        <script
+                type="text/javascript"
+                src="/ssi_school_incident/static/tests/tours/school_incident_approve_tour.js"
+            />
+        <script
+                type="text/javascript"
+                src="/ssi_school_incident/static/tests/tours/school_incident_finish_tour.js"
+            />
+        <script
+                type="text/javascript"
+                src="/ssi_school_incident/static/tests/tours/school_incident_cancel_tour.js"
+            />
     </xpath>
 </template>
 </odoo>

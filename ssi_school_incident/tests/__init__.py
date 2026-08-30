@@ -11,7 +11,9 @@ from . import (  # noqa: F401
     test_school_academic_alert,
     test_school_incident_weekly_review,
     test_escalate_incident_migration,
+    test_escalate_incident_wizard,
     test_ui_school_incident_type,
     test_ui_school_incident_escalation_criteria,
     test_ui_school_academic_alert_level,
+    test_ui_school_incident,
 )

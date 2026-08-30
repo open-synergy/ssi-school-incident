@@ -1,0 +1,219 @@
+options:
+  auto_refresh: true
+
+scenarios:
+  - name: "Escalate Incident Wizard - Happy Path"
+    steps:
+      - step: "Setup - create grade type"
+        action: "create"
+        model: "school_grade_type"
+        save_as: "grade_type"
+        values:
+          name: "Grade Type for Escalate Wizard Test"
+          code: "GTESCWIZ"
+          sequence: 10
+
+      - step: "Setup - create school"
+        action: "create"
+        model: "school"
+        save_as: "school"
+        values:
+          name: "School for Escalate Wizard Test"
+          code: "SCHESCWIZ"
+          grade_type_id: "REC: grade_type.id"
+
+      - step: "Setup - create student contact"
+        action: "create"
+        model: "res.partner"
+        save_as: "contact"
+        values:
+          name: "Escalate Wizard Student Contact"
+
+      - step: "Setup - create student"
+        action: "create"
+        model: "school_student"
+        save_as: "student"
+        values:
+          name: "Student for Escalate Wizard"
+          code: "STUESCWIZ"
+          contact_id: "REC: contact.id"
+          school_id: "REC: school.id"
+
+      - step: "Setup - create incident type"
+        action: "create"
+        model: "school_incident_type"
+        save_as: "incident_type"
+        values:
+          name: "Wizard Escalation Case"
+          code: "INCTYPE-WIZ"
+          default_handling_level: "1"
+
+      - step: "Setup - create matching escalation criteria (level 2)"
+        action: "create"
+        model: "school_incident_escalation_criteria"
+        save_as: "criteria"
+        values:
+          name: "Repeated Incident within 30 Days (Wizard)"
+          code: "ESC-WIZ-L2"
+          sequence: 10
+          target_level: "level_2"
+
+      - step: "Create incident"
+        action: "create"
+        model: "school_incident"
+        save_as: "incident"
+        values:
+          date_incident: 2026-07-05
+          student_id: "REC: student.id"
+          incident_type_id: "REC: incident_type.id"
+          handling_level: "1"
+          description: "Case used to verify the escalate wizard happy path."
+
+      - step: "Confirm incident"
+        action: "call"
+        target: "incident"
+        method: "action_confirm"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "confirm"
+
+      - step: "Approve incident"
+        action: "call"
+        target: "incident"
+        method: "action_approve_approval"
+        as_user: "base.user_admin"
+        asserts:
+          state:
+            type: "value"
+            expected: "open"
+
+      - step: "Escalate via the wizard"
+        action: "wizard"
+        model: "escalate_incident"
+        target: "incident"
+        as_user: "base.user_admin"
+        values:
+          target_level: "2"
+          escalation_criteria_ids: "EVAL: [(6, 0, [registry['criteria'].id])]"
+          escalation_reason: >-
+            Escalated through the Escalate wizard: second incident with the same student
+            within 30 days.
+        method: "action_escalate_wizard"
+        asserts:
+          handling_level:
+            type: "value"
+            expected: "2"
+          resolution_status:
+            type: "value"
+            expected: "escalated"
+          escalated_to_level:
+            type: "value"
+            expected: "2"
+
+  - name: "Escalate Incident Wizard - Wrong State Rejected"
+    steps:
+      - step: "Setup - create grade type"
+        action: "create"
+        model: "school_grade_type"
+        save_as: "grade_type"
+        values:
+          name: "Grade Type for Escalate Wizard Reject Test"
+          code: "GTESCWIZR"
+          sequence: 10
+
+      - step: "Setup - create school"
+        action: "create"
+        model: "school"
+        save_as: "school"
+        values:
+          name: "School for Escalate Wizard Reject Test"
+          code: "SCHESCWIZR"
+          grade_type_id: "REC: grade_type.id"
+
+      - step: "Setup - create student contact"
+        action: "create"
+        model: "res.partner"
+        save_as: "contact"
+        values:
+          name: "Escalate Wizard Reject Student Contact"
+
+      - step: "Setup - create student"
+        action: "create"
+        model: "school_student"
+        save_as: "student"
+        values:
+          name: "Student for Escalate Wizard Reject"
+          code: "STUESCWIZR"
+          contact_id: "REC: contact.id"
+          school_id: "REC: school.id"
+
+      - step: "Setup - create incident type"
+        action: "create"
+        model: "school_incident_type"
+        save_as: "incident_type"
+        values:
+          name: "Wizard Escalation Reject Case"
+          code: "INCTYPE-WIZR"
+          default_handling_level: "1"
+
+      - step: "Setup - create matching escalation criteria (level 2)"
+        action: "create"
+        model: "school_incident_escalation_criteria"
+        save_as: "criteria"
+        values:
+          name: "Repeated Incident within 30 Days (Wizard Reject)"
+          code: "ESC-WIZR-L2"
+          sequence: 10
+          target_level: "level_2"
+
+      - step: "Create incident, left in Draft"
+        action: "create"
+        model: "school_incident"
+        save_as: "incident"
+        values:
+          date_incident: 2026-07-06
+          student_id: "REC: student.id"
+          incident_type_id: "REC: incident_type.id"
+          handling_level: "1"
+          description: "Case used to verify the escalate wizard rejects Draft."
+
+      - step: "Assert incident is still Draft, not eligible to escalate"
+        action: "assert"
+        target: "incident"
+        asserts:
+          state:
+            type: "value"
+            expected: "draft"
+          escalate_ok:
+            type: "value"
+            expected: false
+
+      - step: "Escalate via the wizard while Draft is rejected"
+        action: "wizard"
+        model: "escalate_incident"
+        target: "incident"
+        as_user: "base.user_admin"
+        values:
+          target_level: "2"
+          escalation_criteria_ids: "EVAL: [(6, 0, [registry['criteria'].id])]"
+          escalation_reason: "Attempt to escalate a case that is still Draft."
+        method: "action_escalate_wizard"
+        expect_error:
+          type: "UserError"
+          message_contains: "not allowed to be escalated"
+
+      - step: "Assert incident was not silently changed"
+        action: "assert"
+        target: "incident"
+        asserts:
+          state:
+            type: "value"
+            expected: "draft"
+          handling_level:
+            type: "value"
+            expected: "1"
+          resolution_status:
+            type: "value"
+            expected: "in_progress"
