@@ -527,6 +527,21 @@ msgid ""
 msgstr ""
 
 #. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_academic_alert_level_group
+msgid "Configurator: Academic Alert Level"
+msgstr ""
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_incident_escalation_criteria_group
+msgid "Configurator: Incident Escalation Criteria"
+msgstr ""
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_incident_type_group
+msgid "Configurator: Incident Type"
+msgstr ""
+
+#. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__confirm_ok
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__confirm_ok
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__confirm_ok
