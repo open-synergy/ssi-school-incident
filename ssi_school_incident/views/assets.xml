@@ -33,6 +33,14 @@
                 type="text/javascript"
                 src="/ssi_school_incident/static/tests/tours/school_incident_approve_tour.js"
             />
+        <script
+                type="text/javascript"
+                src="/ssi_school_incident/static/tests/tours/school_incident_finish_tour.js"
+            />
+        <script
+                type="text/javascript"
+                src="/ssi_school_incident/static/tests/tours/school_incident_cancel_tour.js"
+            />
     </xpath>
 </template>
 </odoo>
