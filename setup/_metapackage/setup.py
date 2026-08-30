@@ -9,6 +9,7 @@ setuptools.setup(
     version=version,
     install_requires=[
         'odoo14-addon-ssi_school_incident',
+        'odoo14-addon-ssi_school_incident_operating_unit',
     ],
     classifiers=[
         'Programming Language :: Python',
