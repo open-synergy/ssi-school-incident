@@ -3,7 +3,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "School Incident",
-    "version": "14.0.1.2.2",
+    "version": "14.0.1.3.0",
     "website": "https://simetri-sinergi.id",
     # pylint: disable=line-too-long
     "author": "PT. Simetri Sinergi Indonesia, OpenSynergy Indonesia, Odoo Community Association (OCA)",  # noqa: B950
@@ -20,9 +20,13 @@
         "ssi_transaction_cancel_mixin",
         "ssi_m2o_configurator_mixin",
         "ssi_localdict_mixin",
+        "web_tour",
     ],
     "data": [
         "security/ir_module_category_data.xml",
+        "security/res_groups/school_academic_alert_level.xml",
+        "security/res_groups/school_incident_escalation_criteria.xml",
+        "security/res_groups/school_incident_type.xml",
         "security/res_group_data.xml",
         "security/res_groups/school_academic_alert.xml",
         "security/res_groups/school_incident_weekly_review.xml",
@@ -59,5 +63,6 @@
         "views/school_incident.xml",
         "views/school_academic_alert.xml",
         "views/school_incident_weekly_review.xml",
+        "views/assets.xml",
     ],
 }

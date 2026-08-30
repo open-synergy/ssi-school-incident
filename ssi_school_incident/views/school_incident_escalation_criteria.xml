@@ -77,7 +77,7 @@
         name="Escalation Criteria"
         parent="menu_incident_configuration"
         action="school_incident_escalation_criteria_action"
-        groups="school_incident_manager_group"
+        groups="school_incident_escalation_criteria_group"
         sequence="20"
     />
 

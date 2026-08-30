@@ -19,10 +19,27 @@
     <field name="implied_ids" eval="[(4, ref('school_incident_user_group'))]" />
 </record>
 
+<!-- Manager also keeps CRUD on the three incident master data models via
+     implied_ids (school_academic_alert_level_group,
+     school_incident_escalation_criteria_group, school_incident_type_group;
+     see security/res_groups/<model>.xml); they were folded into this
+     group before their own configurator groups existed (issue #5).
+     implied_ids cascades existing members of this group into the implied
+     groups on module update (res.groups.write() inserts into
+     res_groups_users_rel for every current member), so no migration script
+     is needed to preserve access. -->
 <record id="school_incident_manager_group" model="res.groups">
     <field name="name">Manager (Principal)</field>
     <field name="category_id" ref="school_incident_workflow_module_category" />
-    <field name="implied_ids" eval="[(4, ref('school_incident_officer_group'))]" />
+    <field
+            name="implied_ids"
+            eval="[
+        (4, ref('school_incident_officer_group')),
+        (4, ref('school_academic_alert_level_group')),
+        (4, ref('school_incident_escalation_criteria_group')),
+        (4, ref('school_incident_type_group')),
+    ]"
+        />
     <field
             name="users"
             eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"
