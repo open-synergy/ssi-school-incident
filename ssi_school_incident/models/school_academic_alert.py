@@ -11,7 +11,7 @@ from odoo.tools.safe_eval import safe_eval
 from odoo.addons.ssi_decorator import ssi_decorator
 
 #: Alert level colors that are serious enough to justify creating a School
-#: Incident from a School Academic Alert (Bab 8.3 of the YPII Guideline:
+#: Incident from a School Academic Alert (Bab 8.3 of the School Guideline:
 #: Orange = serious warning, Red = critical warning).
 INCIDENT_ALLOWED_COLORS = ("orange", "red")
 
@@ -19,7 +19,7 @@ INCIDENT_ALLOWED_COLORS = ("orange", "red")
 class SchoolAcademicAlert(models.Model):
     """
     Represents one run of the Three-Color Academic Warning System (Bab 8.3
-    of the YPII Incident & Parent Complaint Handling Guideline v2.0): a
+    of the School Incident & Parent Complaint Handling Guideline v2.0): a
     check of a student's academic standing against the configurable
     ``school_academic_alert_level`` rules, so parents are warned early
     (Yellow/Orange/Red) instead of being surprised by a report card.
@@ -354,7 +354,7 @@ boolean local variable named 'result'
         """Create a ``school_incident`` from this alert.
 
         Only allowed when this alert's triggered ``alert_level_id``
-        has an Orange or Red color (Bab 8.3 of the YPII Guideline);
+        has an Orange or Red color (Bab 8.3 of the School Guideline);
         the created incident is linked back via ``incident_id``.
 
         :return: an ``ir.actions.act_window`` dict opening the newly

@@ -10,7 +10,7 @@ from odoo import api, fields, models
 class SchoolIncidentParentContact(models.Model):
     """
     Represents a single parent/guardian contact log entry for a School
-    Incident case (YPII Incident & Parent Complaint Handling Guideline).
+    Incident case (School Incident & Parent Complaint Handling Guideline).
     Parent communication is central to case satisfaction, and a single
     case is often followed up through several contacts over time (e.g.
     an initial WhatsApp message, followed by a phone call, followed by
@@ -70,7 +70,7 @@ class SchoolIncidentParentContact(models.Model):
         help=(
             "Summary of what was communicated during this contact. "
             "Structure the note using the Empathy -> Facts -> Solution "
-            "framework from the YPII Incident & Parent Complaint "
+            "framework from the School Incident & Parent Complaint "
             "Handling Guideline: first acknowledge the parent's "
             "feelings (Empathy), then state the confirmed facts of the "
             "case (Facts), then describe the concrete resolution or "

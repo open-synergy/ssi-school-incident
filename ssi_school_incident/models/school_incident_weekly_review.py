@@ -10,7 +10,7 @@ from odoo.addons.ssi_decorator import ssi_decorator
 
 #: Resolution statuses treated as "still open / unresolved" for the
 #: Agenda 3 checklist item of the Weekly Case Review (Bab 8 + Lampiran 3 of
-#: the YPII Incident & Parent Complaint Handling Guideline v2.0): cases
+#: the School Incident & Parent Complaint Handling Guideline v2.0): cases
 #: that have neither been resolved nor already escalated to a higher
 #: handling tier. "Escalated" is intentionally excluded here because an
 #: escalated case has already received the elevated attention this
@@ -25,7 +25,7 @@ UNRESOLVED_RESOLUTION_STATUSES = (
 class SchoolIncidentWeeklyReview(models.Model):
     """
     Represents one run of the mandatory Weekly Case Review (Bab 8 +
-    Lampiran 3 of the YPII Incident & Parent Complaint Handling Guideline
+    Lampiran 3 of the School Incident & Parent Complaint Handling Guideline
     v2.0): a max-30-minute Friday meeting that goes through a fixed
     checklist against the ``school_incident`` Master Log entries logged
     for a date range (optionally scoped to one School/unit). Incidents are

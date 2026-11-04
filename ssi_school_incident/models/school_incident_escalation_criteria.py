@@ -9,7 +9,7 @@ class SchoolIncidentEscalationCriteria(
     models.Model
 ):  # pylint: disable=too-few-public-methods
     """
-    Represents an explicit escalation criterion (Bab 8.7 of the YPII
+    Represents an explicit escalation criterion (Bab 8.7 of the School
     Incident & Parent Complaint Handling Guideline) used to decide whether
     a case must be escalated from one handling tier to the next, e.g. from
     Wali Kelas (Tier 1) to BK-Wakasek (Tier 2), or from BK-Wakasek to
