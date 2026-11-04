@@ -9,7 +9,7 @@ from odoo.exceptions import UserError
 class EscalateIncident(models.TransientModel):
     """
     Wizard that escalates a single school_incident case to a higher
-    handling tier. Escalation is never automatic (v2.0 of the YPII
+    handling tier. Escalation is never automatic (v2.0 of the School
     Incident & Parent Complaint Handling Guideline, Bab 8.7): the user
     must select at least one school_incident_escalation_criteria record
     whose Target Level matches the tier being escalated to, and provide a

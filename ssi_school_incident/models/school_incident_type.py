@@ -8,7 +8,7 @@ from odoo import fields, models
 class SchoolIncidentType(models.Model):  # pylint: disable=too-few-public-methods
     """
     Represents a category/type of student incident or parent complaint
-    (Bab 5 / Master Log kolom D of the YPII Incident & Parent Complaint
+    (Bab 5 / Master Log kolom D of the School Incident & Parent Complaint
     Handling Guideline). Determines the default handling tier and the
     first-contact SLA that applies when a case of this type is logged.
     """

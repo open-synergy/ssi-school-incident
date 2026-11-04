@@ -10,7 +10,7 @@ from odoo.exceptions import UserError
 from odoo.addons.ssi_decorator import ssi_decorator
 
 #: Resolution statuses that represent a closed/resolved case (Lampiran 4 of
-#: the YPII Incident & Parent Complaint Handling Guideline v2.0). Used by
+#: the School Incident & Parent Complaint Handling Guideline v2.0). Used by
 #: the "date_resolved required" constraint and by the resolution-overdue
 #: computation below.
 RESOLVED_RESOLUTION_STATUSES = (
@@ -21,7 +21,7 @@ RESOLVED_RESOLUTION_STATUSES = (
 
 class SchoolIncident(models.Model):
     """
-    Represents the Master Log entry required by the YPII Incident & Parent
+    Represents the Master Log entry required by the School Incident & Parent
     Complaint Handling Guideline (v2.0): one record per incident or parent
     complaint case, capturing the five mandatory elements WHO
     (student_id, parent_partner_id), WHAT (incident_type_id, description),
@@ -333,7 +333,7 @@ class SchoolIncident(models.Model):
         help=(
             "Outcome of this case from the parent/guardian's side, as "
             "distinct from the document workflow state above (Lampiran 4 "
-            "of the YPII Guideline). Resolved - Satisfied/Unsatisfied = "
+            "of the School Guideline). Resolved - Satisfied/Unsatisfied = "
             "the case is closed and the parent's satisfaction has been "
             "recorded, In Progress = still being handled, Not Resolved = "
             "handling concluded without resolving the case, Escalated = "
@@ -415,7 +415,7 @@ class SchoolIncident(models.Model):
         column1="incident_id",
         column2="criteria_id",
         help=(
-            "Explicit criteria (Bab 8.7 of the YPII Guideline) selected as "
+            "Explicit criteria (Bab 8.7 of the School Guideline) selected as "
             "the justification for the most recent escalation of this "
             "case to a higher handling tier. Escalation is never "
             "automatic: at least one matching criterion must be selected "
@@ -426,7 +426,7 @@ class SchoolIncident(models.Model):
         string="Escalation Reason",
         help=(
             "Narrative/chronology explaining why this case was escalated "
-            "(Bab 8.8 of the YPII Guideline: what must be reported when "
+            "(Bab 8.8 of the School Guideline: what must be reported when "
             "a case moves to a higher handling tier)."
         ),
     )

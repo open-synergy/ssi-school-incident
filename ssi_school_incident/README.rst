@@ -6,7 +6,7 @@
 School Incident
 ===============
 
-Student incident and parent complaint handling, implementing the YPII
+Student incident and parent complaint handling, implementing the School
 Incident & Parent Complaint Handling Guideline (v2.0):
 
 * **Master Log incident tracking with SLA/escalation** -- log incident and

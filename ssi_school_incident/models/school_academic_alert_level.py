@@ -8,7 +8,7 @@ from odoo import fields, models
 class SchoolAcademicAlertLevel(models.Model):
     """
     Represents one tier of the Three-Color Academic Warning System (Bab 8.3
-    of the YPII Incident & Parent Complaint Handling Guideline v2.0):
+    of the School Incident & Parent Complaint Handling Guideline v2.0):
     Yellow, Orange, or Red. The guideline's own example triggers are
     grade-based (e.g. 2 subjects below 60, 3 subjects below 60, 4 subjects
     below 50), but this model deliberately does **not** hard-code any
@@ -41,7 +41,7 @@ class SchoolAcademicAlertLevel(models.Model):
         ],
         required=True,
         help="Warning color of this level in the Three-Color Academic "
-        "Warning System (Bab 8.3 of the YPII Guideline): Yellow = early "
+        "Warning System (Bab 8.3 of the School Guideline): Yellow = early "
         "warning, Orange = serious warning, Red = critical warning. Only "
         "Orange and Red levels are allowed to generate a School Incident "
         "from a School Academic Alert.",
@@ -69,7 +69,7 @@ class SchoolAcademicAlertLevel(models.Model):
         string="Action Guideline",
         help="Narrative description of the action the school is required "
         "to take when this level triggers (the 'Tindakan Sekolah' column "
-        "of Bab 8.3 of the YPII Guideline), e.g. who must be notified and "
+        "of Bab 8.3 of the School Guideline), e.g. who must be notified and "
         "what meeting or intervention must follow.",
     )
     sla_text = fields.Char(

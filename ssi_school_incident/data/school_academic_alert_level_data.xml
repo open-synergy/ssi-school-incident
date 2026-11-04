@@ -4,7 +4,7 @@
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
 <odoo noupdate="1">
 <!-- Three-Color Academic Warning System default levels (Bab 8.3 of the
-     YPII Guideline). The Python Code below reproduces the guideline's own
+     School Guideline). The Python Code below reproduces the guideline's own
      example trigger (count of subjects below the passing grade), but any
      school unit is free to edit these records (or add new ones) with a
      different formula since the evaluation is entirely data-driven -
