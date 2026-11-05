@@ -1,0 +1,2171 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ssi_school_incident
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: ssi_school_incident
+#: code:addons/ssi_school_incident/models/school_academic_alert.py:0
+#, python-format
+msgid ""
+"\n"
+"Context: Create Incident from Academic Alert\n"
+"Database ID: %s\n"
+"Problem: Creating an Incident is only allowed for Orange or Red alert\n"
+"levels\n"
+"Solution: Evaluate this alert first (button Evaluate) using an Evaluation\n"
+"Context that triggers an Orange/Red Academic Alert Level, then try again\n"
+msgstr ""
+"\n"
+"Konteks: Membuat Insiden dari Peringatan Akademik\n"
+"ID Database: %s\n"
+"Masalah: Pembuatan Insiden hanya diizinkan untuk tingkat peringatan Oranye atau Merah\n"
+"Solusi: Evaluasi peringatan ini terlebih dahulu (tombol Evaluasi) menggunakan Konteks Evaluasi yang memicu Tingkat Peringatan Akademik Oranye/Merah, lalu coba lagi\n"
+
+#. module: ssi_school_incident
+#: code:addons/ssi_school_incident/wizards/escalate_incident.py:0
+#, python-format
+msgid ""
+"\n"
+"Context: Escalate incident to a higher handling tier\n"
+"Database ID: %s\n"
+"Problem: Incident '%s' is not allowed to be escalated right now (check\n"
+"state/policy)\n"
+"Solution: Make sure the incident is Open and that you belong to a group\n"
+"allowed by the escalate policy\n"
+msgstr ""
+"\n"
+"Konteks: Eskalasi insiden ke tingkat penanganan yang lebih tinggi\n"
+"ID Database: %s\n"
+"Masalah: Insiden '%s' saat ini tidak diizinkan untuk dieskalasi (periksa status/kebijakan)\n"
+"Solusi: Pastikan insiden berstatus Terbuka dan Anda termasuk dalam grup yang diizinkan oleh kebijakan eskalasi\n"
+
+#. module: ssi_school_incident
+#: code:addons/ssi_school_incident/models/school_incident.py:0
+#, python-format
+msgid ""
+"\n"
+"Context: Escalate incident to a higher handling tier\n"
+"Database ID: %s\n"
+"Problem: No escalation criteria selected\n"
+"Solution: Select at least one escalation criterion that justifies moving\n"
+"this case to the target handling tier\n"
+msgstr ""
+"\n"
+"Konteks: Eskalasi insiden ke tingkat penanganan yang lebih tinggi\n"
+"ID Database: %s\n"
+"Masalah: Tidak ada kriteria eskalasi yang dipilih\n"
+"Solusi: Pilih setidaknya satu kriteria eskalasi yang membenarkan pemindahan kasus ini ke tingkat penanganan tujuan\n"
+
+#. module: ssi_school_incident
+#: code:addons/ssi_school_incident/models/school_incident.py:0
+#, python-format
+msgid ""
+"\n"
+"Context: Escalate incident to handling tier %s\n"
+"Database ID: %s\n"
+"Problem: The following escalation criteria do not target this tier:\n"
+"%s\n"
+"Solution: Deselect the listed criteria, or select only criteria whose\n"
+"Target Level matches the tier being escalated to\n"
+msgstr ""
+"\n"
+"Konteks: Eskalasi insiden ke tingkat penanganan %s\n"
+"ID Database: %s\n"
+"Masalah: Kriteria eskalasi berikut tidak menargetkan tingkat ini:\n"
+"%s\n"
+"Solusi: Batalkan pilihan kriteria yang tercantum, atau pilih hanya kriteria yang Tingkat Tujuannya sesuai dengan tingkat eskalasi\n"
+
+#. module: ssi_school_incident
+#: code:addons/ssi_school_incident/models/school_academic_alert.py:0
+#, python-format
+msgid ""
+"\n"
+"Context: Evaluate Academic Alert\n"
+"Database ID: %s\n"
+"Problem: Evaluation Context could not be evaluated: %s\n"
+"Solution: Fix the Evaluation Context so it is valid Python source that\n"
+"only assigns local variables, e.g. 'trigger_count = 3'\n"
+msgstr ""
+"\n"
+"Konteks: Evaluasi Peringatan Akademik\n"
+"ID Database: %s\n"
+"Masalah: Konteks Evaluasi tidak dapat dievaluasi: %s\n"
+"Solusi: Perbaiki Konteks Evaluasi agar menjadi kode sumber Python yang valid dan hanya menugaskan variabel lokal, mis. 'trigger_count = 3'\n"
+
+#. module: ssi_school_incident
+#: code:addons/ssi_school_incident/models/school_academic_alert.py:0
+#, python-format
+msgid ""
+"\n"
+"Context: Evaluate Academic Alert\n"
+"Database ID: %s\n"
+"Problem: Python Code of Academic Alert Level '%s' could not be evaluated: %s\n"
+"Solution: Fix the Python Code of that Academic Alert Level so it sets a\n"
+"boolean local variable named 'result'\n"
+msgstr ""
+"\n"
+"Konteks: Evaluasi Peringatan Akademik\n"
+"ID Database: %s\n"
+"Masalah: Kode Python dari Tingkat Peringatan Akademik '%s' tidak dapat dievaluasi: %s\n"
+"Solusi: Perbaiki Kode Python tingkat peringatan tersebut agar menetapkan variabel lokal boolean bernama 'result'\n"
+
+#. module: ssi_school_incident
+#: code:addons/ssi_school_incident/models/school_incident.py:0
+#, python-format
+msgid ""
+"\n"
+"Context: Set Resolution Status to a Resolved value\n"
+"Database ID: %s\n"
+"Problem: Resolution Date is empty while Resolution Status is Resolved\n"
+"Solution: Fill in the Resolution Date field before saving\n"
+msgstr ""
+"\n"
+"Konteks: Mengatur Status Penyelesaian ke nilai Terselesaikan\n"
+"ID Database: %s\n"
+"Masalah: Tanggal Penyelesaian kosong sementara Status Penyelesaian adalah Terselesaikan\n"
+"Solusi: Isi bidang Tanggal Penyelesaian sebelum menyimpan\n"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__name
+msgid "# Document"
+msgstr "No. Dokumen"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__incident_id
+msgid "# Incident"
+msgstr "No. Insiden"
+
+#. module: ssi_school_incident
+#: model:school_incident_type,name:ssi_school_incident.school_incident_type_academic
+msgid "Academic"
+msgstr "Akademik"
+
+#. module: ssi_school_incident
+#: code:addons/ssi_school_incident/models/school_academic_alert.py:0
+#, python-format
+msgid "Academic Alert (%s): %s"
+msgstr "Peringatan Akademik (%s): %s"
+
+#. module: ssi_school_incident
+#: model:ir.model,name:ssi_school_incident.model_school_academic_alert_level
+msgid "Academic Alert Level"
+msgstr "Tingkat Peringatan Akademik"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__alert_level_id
+msgid "Academic Alert Level triggered by the last evaluation (via the Evaluate button). Left empty when no configured level triggers for the current Evaluation Context."
+msgstr "Tingkat Peringatan Akademik yang dipicu oleh evaluasi terakhir (melalui tombol Evaluasi). Dibiarkan kosong bila tidak ada tingkat terkonfigurasi yang terpicu untuk Konteks Evaluasi saat ini."
+
+#. module: ssi_school_incident
+#: model:ir.actions.act_window,name:ssi_school_incident.school_academic_alert_level_action
+#: model:ir.ui.menu,name:ssi_school_incident.school_academic_alert_level_menu
+msgid "Academic Alert Levels"
+msgstr "Tingkat Peringatan Akademik"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_academic_alert_user_group
+msgid "Academic Alert User"
+msgstr "Pengguna Peringatan Akademik"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_academic_alert_validator_group
+msgid "Academic Alert Validator"
+msgstr "Validator Peringatan Akademik"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_academic_alert_viewer_group
+msgid "Academic Alert Viewer"
+msgstr "Penampil Peringatan Akademik"
+
+#. module: ssi_school_incident
+#: model:ir.actions.act_window,name:ssi_school_incident.school_academic_alert_action
+#: model:ir.ui.menu,name:ssi_school_incident.school_academic_alert_menu
+msgid "Academic Alerts"
+msgstr "Peringatan Akademik"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_level_view_form
+msgid "Action & SLA"
+msgstr "Tindakan & SLA"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__action_guideline
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_level_view_form
+msgid "Action Guideline"
+msgstr "Panduan Tindakan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_needaction
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_needaction
+msgid "Action Needed"
+msgstr "Perlu Tindakan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__action_taken
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "Action Taken"
+msgstr "Tindakan yang Diambil"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__active
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__active
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__active
+msgid "Active"
+msgstr "Aktif"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__active_approval_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__active_approval_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__active_approval_ids
+msgid "Active Approvals"
+msgstr "Persetujuan Aktif"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__active_approver_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__active_approver_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__active_approver_partner_ids
+msgid "Active Partners"
+msgstr "Mitra Aktif"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__active_approver_user_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__active_approver_user_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__active_approver_user_ids
+msgid "Active Users"
+msgstr "Pengguna Aktif"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__activity_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__activity_ids
+msgid "Activities"
+msgstr "Aktivitas"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__activity_exception_decoration
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Dekorasi Pengecualian Aktivitas"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__activity_state
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__activity_state
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__activity_state
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__activity_state
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__activity_state
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__activity_state
+msgid "Activity State"
+msgstr "Status Aktivitas"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__activity_type_icon
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikon Jenis Aktivitas"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__chk_escalation_criteria_audited
+msgid "Agenda 5 (v2.0): manual confirmation that the officer has audited every Escalated case in the Incidents list below and verified it complies with Bab 8.7 -- i.e. each one has at least one Escalation Criteria entry recorded as its justification. 'Compliance' here means no case was moved to a higher handling tier without at least one matching, recorded criterion; this checkbox does not enforce that by itself, it only records that the manual audit was performed."
+msgstr "Agenda 5 (v2.0): konfirmasi manual bahwa petugas telah mengaudit setiap kasus Dieskalasi dalam daftar Insiden di bawah dan memverifikasi bahwa kasus tersebut sesuai dengan Bab 8.7 -- yaitu masing-masing memiliki setidaknya satu entri Kriteria Eskalasi yang tercatat sebagai pembenarannya. 'Kepatuhan' di sini berarti tidak ada kasus yang dipindahkan ke tingkat penanganan yang lebih tinggi tanpa setidaknya satu kriteria yang sesuai dan tercatat; kotak centang ini tidak menegakkannya sendiri, hanya mencatat bahwa audit manual telah dilakukan."
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_form
+msgid "Agenda 5 - Escalation Criteria Audited"
+msgstr "Agenda 5 - Kriteria Eskalasi Telah Diaudit"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__chk_health_summary_available
+msgid "Agenda 6 (v2.0): confirms that a summary of this period's health-related cases (School Incidents whose Incident Type is flagged is_health) has been prepared and reviewed, so health trends are not lost inside the general incident log."
+msgstr "Agenda 6 (v2.0): mengonfirmasi bahwa ringkasan kasus terkait kesehatan pada periode ini (Insiden Sekolah yang Jenis Insidennya bertanda is_health) telah disiapkan dan ditinjau, sehingga tren kesehatan tidak hilang di dalam log insiden umum."
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_form
+msgid "Agenda 6 - Health Case Summary Available"
+msgstr "Agenda 6 - Ringkasan Kasus Kesehatan Tersedia"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__date_alert
+msgid "Alert Date"
+msgstr "Tanggal Peringatan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__alert_level_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_view_search
+msgid "Alert Level"
+msgstr "Tingkat Peringatan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__allowed_policy_template_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__allowed_policy_template_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__allowed_policy_template_ids
+msgid "Allowed Policy Templates"
+msgstr "Templat Kebijakan yang Diizinkan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__approval_template_id
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__approval_template_id
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__approval_template_id
+msgid "Approval Configuration"
+msgstr "Konfigurasi Persetujuan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__approval_template_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__approval_template_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__approval_template_id
+msgid "Approval Template"
+msgstr "Templat Persetujuan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__approval_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__approval_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__approval_ids
+msgid "Approvals"
+msgstr "Persetujuan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__approve_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__approve_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__approve_ok
+msgid ""
+"Approve policy\n"
+"\n"
+"* If active user can see and execute 'Approve' button"
+msgstr ""
+"Kebijakan persetujuan\n"
+"\n"
+"* Jika aktif, pengguna dapat melihat dan menekan tombol 'Setujui'"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__approved
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__approved
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__approved
+msgid "Approved"
+msgstr "Disetujui"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_escalate_incident__escalation_criteria_ids
+msgid "At least one criterion whose Target Level matches the selected Target Level above, justifying this escalation."
+msgstr "Setidaknya satu kriteria yang Tingkat Tujuannya sesuai dengan Tingkat Tujuan yang dipilih di atas, yang membenarkan eskalasi ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_attachment_count
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_attachment_count
+msgid "Attachment Count"
+msgstr "Jumlah Lampiran"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_form
+msgid "Bab 8 / Lampiran 3 Checklist"
+msgstr "Daftar Periksa Bab 8 / Lampiran 3"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__approve_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__approve_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__approve_ok
+msgid "Can Approve"
+msgstr "Dapat Menyetujui"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__cancel_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__cancel_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__cancel_ok
+msgid "Can Cancel"
+msgstr "Dapat Membatalkan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__collect_ok
+msgid "Can Collect"
+msgstr "Dapat Mengumpulkan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__confirm_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__confirm_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__confirm_ok
+msgid "Can Confirm"
+msgstr "Dapat Mengonfirmasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__create_incident_ok
+msgid "Can Create Incident"
+msgstr "Dapat Membuat Insiden"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__escalate_ok
+msgid "Can Escalate"
+msgstr "Dapat Mengeskalasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__evaluate_ok
+msgid "Can Evaluate"
+msgstr "Dapat Mengevaluasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__done_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__done_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__done_ok
+msgid "Can Finished"
+msgstr "Dapat Diselesaikan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__manual_number_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__manual_number_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__manual_number_ok
+msgid "Can Input Manual Document Number"
+msgstr "Dapat Memasukkan Nomor Dokumen Manual"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__reject_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__reject_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__reject_ok
+msgid "Can Reject"
+msgstr "Dapat Menolak"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__restart_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__restart_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__restart_ok
+msgid "Can Restart"
+msgstr "Dapat Memulai Ulang"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__restart_approval_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__restart_approval_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__restart_approval_ok
+msgid "Can Restart Approval"
+msgstr "Dapat Memulai Ulang Persetujuan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__open_ok
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__open_ok
+msgid "Can Start"
+msgstr "Dapat Memulai"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.escalate_incident_view_form
+msgid "Cancel"
+msgstr "Batal"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__cancel_reason_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__cancel_reason_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__cancel_reason_id
+msgid "Cancel Reason"
+msgstr "Alasan Pembatalan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__cancel_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__cancel_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__cancel_ok
+msgid ""
+"Cancel policy\n"
+"\n"
+"* If active user can see and execute 'Cancel' button"
+msgstr ""
+"Kebijakan pembatalan\n"
+"\n"
+"* Jika aktif, pengguna dapat melihat dan menekan tombol 'Batal'"
+
+#. module: ssi_school_incident
+#: code:addons/ssi_school_incident/models/school_incident.py:0
+#, python-format
+msgid "Case escalated to handling tier %s.<br/>Criteria: %s<br/>Reason: %s"
+msgstr "Kasus dieskalasi ke tingkat penanganan %s.<br/>Kriteria: %s<br/>Alasan: %s"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__code
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__code
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__code
+msgid "Code"
+msgstr "Kode"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_form
+msgid "Collect Incidents"
+msgstr "Kumpulkan Insiden"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_form
+msgid "Collected Incidents"
+msgstr "Insiden yang Dikumpulkan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__color
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__color
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_level_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_view_search
+msgid "Color"
+msgstr "Warna"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__company_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__company_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__company_id
+msgid "Company"
+msgstr "Perusahaan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__company_partner_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__company_partner_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__company_partner_id
+msgid "Company Partner"
+msgstr "Mitra Perusahaan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__company_id
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__company_id
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__company_id
+msgid ""
+"Company that own the document\n"
+"\n"
+"* Automatically filled with user's company.\n"
+"  Default company can be changed"
+msgstr ""
+"Perusahaan pemilik dokumen\n"
+"\n"
+"* Otomatis terisi dengan perusahaan pengguna.\n"
+"  Perusahaan default dapat diubah"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_academic_alert_level_group
+msgid "Configurator: Academic Alert Level"
+msgstr "Konfigurator: Tingkat Peringatan Akademik"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_incident_escalation_criteria_group
+msgid "Configurator: Incident Escalation Criteria"
+msgstr "Konfigurator: Kriteria Eskalasi Insiden"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_incident_type_group
+msgid "Configurator: Incident Type"
+msgstr "Konfigurator: Jenis Insiden"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__confirm_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__confirm_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__confirm_ok
+msgid ""
+"Confirm policy\n"
+"\n"
+"* If active user can see and execute 'Confirm' button"
+msgstr ""
+"Kebijakan konfirmasi\n"
+"\n"
+"* Jika aktif, pengguna dapat melihat dan menekan tombol 'Konfirmasi'"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__chk_unresolved_over_7d_flagged
+msgid "Confirms that every case counted in 'Not Resolved > 7 Days' above (Agenda 2) has actually been flagged/escalated to the handler and/or their supervisor for follow-up, not merely observed in this review."
+msgstr "Mengonfirmasi bahwa setiap kasus yang dihitung dalam 'Belum Terselesaikan > 7 Hari' di atas (Agenda 2) benar-benar telah ditandai/dieskalasi kepada penangan dan/atau atasannya untuk ditindaklanjuti, bukan sekadar diamati dalam tinjauan ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__chk_sla_breach_identified
+msgid "Confirms that every case counted in 'Overdue Incidents' above (Agenda 3, First Contact or Resolution SLA breach) has been identified and communicated to the relevant handling tier."
+msgstr "Mengonfirmasi bahwa setiap kasus yang dihitung dalam 'Insiden Terlambat' di atas (Agenda 3, pelanggaran SLA Kontak Pertama atau Penyelesaian) telah diidentifikasi dan dikomunikasikan kepada tingkat penanganan yang relevan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__chk_master_log_updated
+msgid "Confirms that the school_incident Master Log has been kept up to date for the period under review (Agenda 1 of the Weekly Case Review): every case that occurred in the period has a corresponding School Incident record."
+msgstr "Mengonfirmasi bahwa Log Induk school_incident telah diperbarui untuk periode yang ditinjau (Agenda 1 Tinjauan Kasus Mingguan): setiap kasus yang terjadi pada periode tersebut memiliki catatan Insiden Sekolah yang sesuai."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__contact_datetime
+msgid "Contact Date & Time"
+msgstr "Tanggal & Waktu Kontak"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__contact_method
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__contact_method
+msgid "Contact Method"
+msgstr "Metode Kontak"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__contacted_by_id
+msgid "Contacted By"
+msgstr "Dihubungi Oleh"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_view_form
+msgid "Create Incident"
+msgstr "Buat Insiden"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__create_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__create_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__create_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__create_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__create_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__create_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__create_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__create_uid
+msgid "Created by"
+msgstr "Dibuat oleh"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__create_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__create_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__create_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__create_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__create_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__create_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__create_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__create_date
+msgid "Created on"
+msgstr "Dibuat pada"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__date_end
+msgid "Date End"
+msgstr "Tanggal Selesai"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__date_start
+msgid "Date Start"
+msgstr "Tanggal Mulai"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__escalation_date
+msgid "Date and time of the most recent escalation of this case."
+msgstr "Tanggal dan waktu eskalasi terakhir kasus ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__date_first_contact
+msgid "Date and time the assigned handler first contacted the parties involved in this case (Master Log column H). Automatically kept in sync with the earliest entry in the Parent Contacts log below whenever that log is not empty; manually editable as a fallback while no log entries have been recorded yet."
+msgstr "Tanggal dan waktu penangan yang ditugaskan pertama kali menghubungi pihak-pihak yang terlibat dalam kasus ini (kolom H Log Induk). Otomatis disinkronkan dengan entri paling awal pada log Kontak Orang Tua di bawah selama log tersebut tidak kosong; dapat diubah manual sebagai cadangan selama belum ada entri log yang tercatat."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_parent_contact__contact_datetime
+msgid "Date and time this particular contact with the parent/guardian took place."
+msgstr "Tanggal dan waktu kontak ini dengan orang tua/wali berlangsung."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__date_resolved
+msgid "Date this case was resolved (Master Log column L). Required once Resolution Status is set to one of the Resolved values."
+msgstr "Tanggal kasus ini diselesaikan (kolom L Log Induk). Wajib diisi setelah Status Penyelesaian ditetapkan ke salah satu nilai Terselesaikan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__default_handling_level
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_type_view_search
+msgid "Default Handling Level"
+msgstr "Tingkat Penanganan Default"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__default_handling_level
+msgid "Default handling tier assigned to incidents of this type: Tier 1 = Wali Kelas (Homeroom Teacher), Tier 2 = BK-Wakasek (Counselor/Vice Principal), Tier 3 = Kepala Sekolah (Principal). This is only the default; an actual incident case can still be escalated beyond this level."
+msgstr "Tingkat penanganan default untuk insiden dengan jenis ini: Tingkat 1 = Wali Kelas, Tingkat 2 = BK-Wakasek (Konselor/Wakil Kepala Sekolah), Tingkat 3 = Kepala Sekolah. Ini hanya nilai default; kasus insiden yang sebenarnya tetap dapat dieskalasi melebihi tingkat ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__description
+msgid "Description"
+msgstr "Deskripsi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__verification_method
+msgid "Description of how to verify that this escalation criterion has been met for a given incident case."
+msgstr "Deskripsi cara memverifikasi bahwa kriteria eskalasi ini terpenuhi untuk suatu kasus insiden."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__action_taken
+msgid "Description of the concrete action(s) taken to handle this case (the ACTION element of the Master Log)."
+msgstr "Deskripsi tindakan konkret yang diambil untuk menangani kasus ini (elemen TINDAKAN pada Log Induk)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__display_name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__display_name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__display_name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__display_name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__display_name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__display_name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__display_name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__display_name
+msgid "Display Name"
+msgstr "Nama Tampilan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__sequence
+msgid "Display and evaluation order of the escalation criterion. Lower values are evaluated/shown first."
+msgstr "Urutan tampilan dan evaluasi kriteria eskalasi. Nilai yang lebih rendah dievaluasi/ditampilkan lebih dahulu."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__done_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__done_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__done_ok
+msgid ""
+"Done policy\n"
+"\n"
+"* If active user can see and execute 'Done' button"
+msgstr ""
+"Kebijakan selesai\n"
+"\n"
+"* Jika aktif, pengguna dapat melihat dan menekan tombol 'Selesai'"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__date_end
+msgid "End of the week (or other period) this review covers, normally the Friday the review meeting is held on. School Incidents with an Incident Date on or before this date are eligible to be pulled in by the Collect button. Also used as the reference 'as of' date for the Not Resolved > 7 days computation below, since a review can be filed in retrospect and should not depend on the date it happens to be opened/saved."
+msgstr "Akhir pekan (atau periode lain) yang dicakup tinjauan ini, biasanya hari Jumat saat rapat tinjauan diadakan. Insiden Sekolah dengan Tanggal Insiden pada atau sebelum tanggal ini dapat ditarik oleh tombol Kumpulkan. Juga digunakan sebagai tanggal acuan 'per tanggal' untuk perhitungan Belum Terselesaikan > 7 hari di bawah, karena tinjauan dapat diajukan secara retrospektif dan tidak boleh bergantung pada tanggal saat tinjauan dibuka/disimpan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__enrollment_id
+msgid "Enrollment"
+msgstr "Pendaftaran"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.escalate_incident_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "Escalate"
+msgstr "Eskalasi"
+
+#. module: ssi_school_incident
+#: model:ir.actions.act_window,name:ssi_school_incident.escalate_incident_action
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.escalate_incident_view_form
+msgid "Escalate Incident"
+msgstr "Eskalasi Insiden"
+
+#. module: ssi_school_incident
+#: model:ir.model,name:ssi_school_incident.model_escalate_incident
+msgid "Escalate Incident to a Higher Handling Tier"
+msgstr "Eskalasi Insiden ke Tingkat Penanganan yang Lebih Tinggi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__resolution_status__escalated
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_form
+msgid "Escalated"
+msgstr "Dieskalasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__escalated_by_id
+msgid "Escalated By"
+msgstr "Dieskalasi Oleh"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__count_escalated
+msgid "Escalated Incidents"
+msgstr "Insiden yang Dieskalasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__escalated_to_level
+msgid "Escalated To Level"
+msgstr "Dieskalasi ke Tingkat"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_escalation_criteria_view_form
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "Escalation"
+msgstr "Eskalasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__escalation_criteria_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__escalation_criteria_ids
+#: model:ir.ui.menu,name:ssi_school_incident.school_incident_escalation_criteria_menu
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "Escalation Criteria"
+msgstr "Kriteria Eskalasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__chk_escalation_criteria_audited
+msgid "Escalation Criteria Audited"
+msgstr "Kriteria Eskalasi Telah Diaudit"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_escalation_criteria_view_form
+msgid "Escalation Criterion"
+msgstr "Kriteria Eskalasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__escalation_date
+msgid "Escalation Date"
+msgstr "Tanggal Eskalasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__escalation_reason
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__escalation_reason
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "Escalation Reason"
+msgstr "Alasan Eskalasi"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_view_form
+msgid "Evaluate"
+msgstr "Evaluasi"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_view_form
+msgid "Evaluation"
+msgstr "Evaluasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__evaluation_context
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_view_form
+msgid "Evaluation Context"
+msgstr "Konteks Evaluasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__escalation_criteria_ids
+msgid "Explicit criteria (Bab 8.7 of the School Guideline) selected as the justification for the most recent escalation of this case to a higher handling tier. Escalation is never automatic: at least one matching criterion must be selected here before the case can move up a tier."
+msgstr "Kriteria eksplisit (Bab 8.7 Panduan Sekolah) yang dipilih sebagai pembenaran eskalasi terakhir kasus ini ke tingkat penanganan yang lebih tinggi. Eskalasi tidak pernah otomatis: setidaknya satu kriteria yang sesuai harus dipilih di sini sebelum kasus dapat naik tingkat."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__contact_method__face_to_face
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident_parent_contact__contact_method__face_to_face
+msgid "Face to Face"
+msgstr "Tatap Muka"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__is_first_contact
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "First Contact"
+msgstr "Kontak Pertama"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__date_first_contact
+msgid "First Contact Date"
+msgstr "Tanggal Kontak Pertama"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__first_contact_deadline
+msgid "First Contact Deadline"
+msgstr "Batas Waktu Kontak Pertama"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__is_first_contact_overdue
+msgid "First Contact Overdue"
+msgstr "Kontak Pertama Terlambat"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__first_contact_sla_hour
+msgid "First Contact SLA (Hour)"
+msgstr "SLA Kontak Pertama (Jam)"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_follower_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_follower_ids
+msgid "Followers"
+msgstr "Pengikut"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_channel_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Pengikut (Saluran)"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_partner_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Pengikut (Mitra)"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__activity_type_icon
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Ikon Font Awesome, misalnya fa-tasks"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__subject_note
+msgid "Free-text context for this alert, e.g. which subject(s) are below the passing grade. Also used as part of the auto-generated description when an Incident is created from this alert."
+msgstr "Konteks teks bebas untuk peringatan ini, mis. mata pelajaran mana yang berada di bawah nilai kelulusan. Juga digunakan sebagai bagian dari deskripsi yang dibuat otomatis saat Insiden dibuat dari peringatan ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__sla_text
+msgid "Free-text description of the service-level agreement that applies once this level triggers, e.g. how soon the parent must be contacted or a meeting must be scheduled."
+msgstr "Deskripsi teks bebas tentang perjanjian tingkat layanan yang berlaku begitu tingkat ini terpicu, mis. seberapa cepat orang tua harus dihubungi atau pertemuan harus dijadwalkan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__note
+msgid "Free-text minutes or follow-up notes from this Weekly Case Review meeting."
+msgstr "Notulen atau catatan tindak lanjut teks bebas dari rapat Tinjauan Kasus Mingguan ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__grade_class_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__grade_class_id
+msgid "Grade Class"
+msgstr "Kelas Tingkat"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_level_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_escalation_criteria_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_type_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_search
+msgid "Group By"
+msgstr "Kelompokkan Berdasarkan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__handled_by_id
+msgid "Handled By"
+msgstr "Ditangani Oleh"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_type_view_form
+msgid "Handling"
+msgstr "Penanganan"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_type_view_form
+msgid "Handling Configuration"
+msgstr "Konfigurasi Penanganan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__handling_level
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_search
+msgid "Handling Level"
+msgstr "Tingkat Penanganan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__target_level
+msgid "Handling tier the case must be escalated to when this criterion is met."
+msgstr "Tingkat penanganan tujuan eskalasi kasus ketika kriteria ini terpenuhi."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__escalated_to_level
+msgid "Handling tier this case was moved to by its most recent escalation."
+msgstr "Tingkat penanganan tempat kasus ini dipindahkan oleh eskalasi terakhirnya."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__chk_health_summary_available
+msgid "Health Case Summary Available"
+msgstr "Ringkasan Kasus Kesehatan Tersedia"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_type_view_search
+msgid "Health-Related"
+msgstr "Terkait Kesehatan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__parent_contact_ids
+msgid "History of every contact made with the parent/guardian for this case (WhatsApp, phone call, face-to-face meeting, etc.), following the Empathy -> Facts -> Solution communication framework. The earliest entry here automatically updates the First Contact Date field above."
+msgstr "Riwayat setiap kontak dengan orang tua/wali untuk kasus ini (WhatsApp, panggilan telepon, pertemuan tatap muka, dll.), mengikuti kerangka komunikasi Empati -> Fakta -> Solusi. Entri paling awal di sini otomatis memperbarui bidang Tanggal Kontak Pertama di atas."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__activity_exception_icon
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__activity_exception_icon
+msgid "Icon"
+msgstr "Ikon"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__activity_exception_icon
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikon untuk menandai aktivitas pengecualian."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__message_needaction
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__message_unread
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__message_needaction
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__message_unread
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__message_needaction
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__message_unread
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__message_needaction
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__message_unread
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__message_needaction
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__message_unread
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__message_needaction
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Jika dicentang, pesan baru memerlukan perhatian Anda."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__message_has_error
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__message_has_error
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__message_has_error
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__message_has_error
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__message_has_error
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Jika dicentang, beberapa pesan mengalami kesalahan pengiriman."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__resolution_status__in_progress
+msgid "In Progress"
+msgstr "Dalam Proses"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__incident_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__incident_id
+#: model:ir.ui.menu,name:ssi_school_incident.menu_incident_configuration
+#: model:ir.ui.menu,name:ssi_school_incident.menu_incident_root
+msgid "Incident"
+msgstr "Insiden"
+
+#. module: ssi_school_incident
+#: model:ir.module.category,name:ssi_school_incident.school_incident_configurator_module_category
+msgid "Incident - Configurator"
+msgstr "Insiden - Konfigurator"
+
+#. module: ssi_school_incident
+#: model:ir.module.category,name:ssi_school_incident.school_incident_data_ownership_module_category
+msgid "Incident - Data Ownership"
+msgstr "Insiden - Kepemilikan Data"
+
+#. module: ssi_school_incident
+#: model:ir.module.category,name:ssi_school_incident.school_incident_workflow_module_category
+msgid "Incident - Workflow"
+msgstr "Insiden - Alur Kerja"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__date_incident
+msgid "Incident Date"
+msgstr "Tanggal Insiden"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "Incident Detail"
+msgstr "Detail Insiden"
+
+#. module: ssi_school_incident
+#: model:ir.actions.act_window,name:ssi_school_incident.school_incident_escalation_criteria_action
+#: model:ir.model,name:ssi_school_incident.model_school_incident_escalation_criteria
+msgid "Incident Escalation Criteria"
+msgstr "Kriteria Eskalasi Insiden"
+
+#. module: ssi_school_incident
+#: model:ir.model,name:ssi_school_incident.model_school_incident_type
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__incident_type_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_search
+msgid "Incident Type"
+msgstr "Jenis Insiden"
+
+#. module: ssi_school_incident
+#: model:ir.actions.act_window,name:ssi_school_incident.school_incident_type_action
+#: model:ir.ui.menu,name:ssi_school_incident.school_incident_type_menu
+msgid "Incident Types"
+msgstr "Jenis Insiden"
+
+#. module: ssi_school_incident
+#: code:addons/ssi_school_incident/models/school_incident_weekly_review.py:0
+#: model:ir.actions.act_window,name:ssi_school_incident.school_incident_action
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__incident_ids
+#: model:ir.ui.menu,name:ssi_school_incident.school_incident_menu
+#, python-format
+msgid "Incidents"
+msgstr "Insiden"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_is_follower
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_is_follower
+msgid "Is Follower"
+msgstr "Adalah Pengikut"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__is_health
+msgid "Is Health-Related"
+msgstr "Terkait Kesehatan"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "Last Escalation"
+msgstr "Eskalasi Terakhir"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident____last_update
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert____last_update
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level____last_update
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident____last_update
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria____last_update
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact____last_update
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type____last_update
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review____last_update
+msgid "Last Modified on"
+msgstr "Terakhir Diubah pada"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__write_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__write_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__write_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__write_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__write_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__write_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__write_uid
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__write_uid
+msgid "Last Updated by"
+msgstr "Terakhir Diperbarui oleh"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__write_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__write_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__write_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__write_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__write_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__write_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__write_date
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__write_date
+msgid "Last Updated on"
+msgstr "Terakhir Diperbarui pada"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__first_contact_deadline
+msgid "Latest date/time by which the assigned handler must make first contact with the parties involved, computed from the Incident Date plus the applicable First Contact SLA (taken from the Incident Type, or from the per-tier default when the Incident Type does not define one)."
+msgstr "Tanggal/waktu terakhir penangan yang ditugaskan harus melakukan kontak pertama dengan pihak-pihak yang terlibat, dihitung dari Tanggal Insiden ditambah SLA Kontak Pertama yang berlaku (diambil dari Jenis Insiden, atau dari default per tingkat bila Jenis Insiden tidak menentukannya)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__resolution_deadline
+msgid "Latest date/time by which this case must be resolved, computed from the Incident Date plus the applicable Resolution SLA for the assigned handling tier."
+msgstr "Tanggal/waktu terakhir kasus ini harus diselesaikan, dihitung dari Tanggal Insiden ditambah SLA Penyelesaian yang berlaku untuk tingkat penanganan yang ditugaskan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__contact_method__letter
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident_parent_contact__contact_method__letter
+msgid "Letter"
+msgstr "Surat"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__escalate_incident__target_level__2
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__escalated_to_level__2
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident_escalation_criteria__target_level__level_2
+msgid "Level 2 - Counselor/Vice Principal"
+msgstr "Tingkat 2 - Konselor/Wakil Kepala Sekolah"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__escalate_incident__target_level__3
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__escalated_to_level__3
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident_escalation_criteria__target_level__level_3
+msgid "Level 3 - Principal"
+msgstr "Tingkat 3 - Kepala Sekolah"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_main_attachment_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Lampiran Utama"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_incident_manager_group
+msgid "Manager (Principal)"
+msgstr "Manajer (Kepala Sekolah)"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__manual_number_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__manual_number_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__manual_number_ok
+msgid ""
+"Manual number assignment policy\n"
+"\n"
+"* If active user can edit document number"
+msgstr ""
+"Kebijakan penetapan nomor manual\n"
+"\n"
+"* Jika aktif, pengguna dapat mengubah nomor dokumen"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__is_health
+msgid "Marks this incident type as health-related. Health-related incidents follow the separate Health Protocol SLA and escalation path defined outside this module, not the standard incident handling SLA configured here."
+msgstr "Menandai jenis insiden ini sebagai terkait kesehatan. Insiden terkait kesehatan mengikuti SLA Protokol Kesehatan dan jalur eskalasi terpisah yang didefinisikan di luar modul ini, bukan SLA penanganan insiden standar yang dikonfigurasi di sini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__chk_master_log_updated
+msgid "Master Log Updated"
+msgstr "Log Induk Diperbarui"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__active
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__active
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__active
+msgid ""
+"Master data status\n"
+"\n"
+"* Inactive data can not be selected when creating new transaction\n"
+"* Transaction with inactive master data can still be viewed\n"
+"* Set master data as inactive if master data no longger needed,\n"
+"but master data already used on transaction"
+msgstr ""
+"Status data master\n"
+"\n"
+"* Data tidak aktif tidak dapat dipilih saat membuat transaksi baru\n"
+"* Transaksi dengan data master tidak aktif tetap dapat dilihat\n"
+"* Jadikan data master tidak aktif jika data master tidak lagi diperlukan,\n"
+"namun data master sudah digunakan pada transaksi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__code
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__code
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__code
+msgid ""
+"Master data unique identifier.\n"
+"\n"
+"* Fill with '/' if You do not need unique identifier\n"
+"* Click 'Generate Code' button to automatically assign code.\n"
+"  Sequence template mush be set to perform this action\n"
+"  Only master data with '/' code will be assign automatic code"
+msgstr ""
+"Pengenal unik data master.\n"
+"\n"
+"* Isi dengan '/' jika Anda tidak memerlukan pengenal unik\n"
+"* Klik tombol 'Buat Kode' untuk menetapkan kode secara otomatis.\n"
+"  Templat urutan harus diatur untuk melakukan tindakan ini\n"
+"  Hanya data master dengan kode '/' yang akan diberi kode otomatis"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__first_contact_sla_hour
+msgid "Maximum number of hours allowed, from the moment an incident of this type is logged, before the assigned handler must make first contact with the parties involved."
+msgstr "Jumlah jam maksimum yang diizinkan, sejak insiden jenis ini dicatat, sebelum penangan yang ditugaskan harus melakukan kontak pertama dengan pihak-pihak yang terlibat."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_has_error
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_has_error
+msgid "Message Delivery error"
+msgstr "Kesalahan Pengiriman Pesan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_ids
+msgid "Messages"
+msgstr "Pesan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__my_activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Batas Waktu Aktivitas Saya"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__name
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__name
+msgid "Name"
+msgstr "Nama"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__action_guideline
+msgid "Narrative description of the action the school is required to take when this level triggers (the 'Tindakan Sekolah' column of Bab 8.3 of the School Guideline), e.g. who must be notified and what meeting or intervention must follow."
+msgstr "Deskripsi naratif tindakan yang wajib dilakukan sekolah ketika tingkat ini terpicu (kolom 'Tindakan Sekolah' pada Bab 8.3 Panduan Sekolah), mis. siapa yang harus diberi tahu dan pertemuan atau intervensi apa yang harus menyusul."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_escalate_incident__escalation_reason
+msgid "Narrative/chronology explaining why this case is being escalated."
+msgstr "Narasi/kronologi yang menjelaskan mengapa kasus ini dieskalasi."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__escalation_reason
+msgid "Narrative/chronology explaining why this case was escalated (Bab 8.8 of the School Guideline: what must be reported when a case moves to a higher handling tier)."
+msgstr "Narasi/kronologi yang menjelaskan mengapa kasus ini dieskalasi (Bab 8.8 Panduan Sekolah: apa yang wajib dilaporkan ketika kasus dipindahkan ke tingkat penanganan yang lebih tinggi)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__need_validation
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__need_validation
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__need_validation
+msgid "Need Validation"
+msgstr "Perlu Validasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__activity_date_deadline
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Batas Waktu Aktivitas Berikutnya"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__activity_summary
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__activity_summary
+msgid "Next Activity Summary"
+msgstr "Ringkasan Aktivitas Berikutnya"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__activity_type_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__activity_type_id
+msgid "Next Activity Type"
+msgstr "Jenis Aktivitas Berikutnya"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__next_approval_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__next_approval_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__next_approval_ids
+msgid "Next Approvals"
+msgstr "Persetujuan Berikutnya"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__resolution_status__not_resolved
+msgid "Not Resolved"
+msgstr "Belum Terselesaikan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__count_unresolved_over_7d
+msgid "Not Resolved > 7 Days"
+msgstr "Belum Terselesaikan > 7 Hari"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__chk_unresolved_over_7d_flagged
+msgid "Not Resolved > 7 Days Flagged"
+msgstr "Belum Terselesaikan > 7 Hari Telah Ditandai"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_form
+msgid "Not Resolved > 7d"
+msgstr "Belum Terselesaikan > 7 hr"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__note
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__note
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__note
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__note
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__note
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__note
+msgid "Note"
+msgstr "Catatan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_needaction_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Jumlah Tindakan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__count_unresolved_over_7d
+msgid "Number of collected School Incidents that are still 'In Progress' or 'Not Resolved' (i.e. not yet Resolved and not yet Escalated) whose Incident Date is more than 7 days before Date End. Date End (not today's real date) is used as the 'as of' reference so a review filed in retrospect computes the same result it would have on the day it was held. Backs the 'cases Not Resolved for more than 7 days flagged' checklist item."
+msgstr "Jumlah Insiden Sekolah yang dikumpulkan yang masih 'Dalam Proses' atau 'Belum Terselesaikan' (yaitu belum Terselesaikan dan belum Dieskalasi) dengan Tanggal Insiden lebih dari 7 hari sebelum Tanggal Akhir. Tanggal Akhir (bukan tanggal sebenarnya hari ini) digunakan sebagai acuan 'per tanggal' agar tinjauan yang diajukan secara retrospektif menghasilkan hitungan yang sama seperti pada hari tinjauan diadakan. Mendukung butir daftar periksa 'kasus Belum Terselesaikan lebih dari 7 hari telah ditandai'."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__count_overdue
+msgid "Number of collected School Incidents whose Overdue flag (is_overdue, either on First Contact or on Resolution SLA) is currently set. Backs the 'SLA-breaching cases identified' checklist item."
+msgstr "Jumlah Insiden Sekolah yang dikumpulkan yang penanda Terlambatnya (is_overdue, baik pada Kontak Pertama maupun SLA Penyelesaian) saat ini aktif. Mendukung butir daftar periksa 'kasus pelanggar SLA telah diidentifikasi'."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__count_escalated
+msgid "Number of collected School Incidents whose Resolution Status is 'Escalated'. Used as supporting evidence for the Agenda 5 escalation-criteria compliance audit checklist item."
+msgstr "Jumlah Insiden Sekolah yang dikumpulkan yang Status Penyelesaiannya 'Dieskalasi'. Digunakan sebagai bukti pendukung untuk butir daftar periksa audit kepatuhan kriteria eskalasi Agenda 5."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_has_error_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_has_error_counter
+msgid "Number of errors"
+msgstr "Jumlah kesalahan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__message_needaction_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Jumlah pesan yang memerlukan tindakan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__message_has_error_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Jumlah pesan dengan kesalahan pengiriman"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__parent_contact_count
+msgid "Number of parent contact log entries recorded for this case."
+msgstr "Jumlah entri log kontak orang tua yang tercatat untuk kasus ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__message_unread_counter
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Jumlah pesan yang belum dibaca"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_incident_officer_group
+msgid "Officer (Counselor/Vice Principal)"
+msgstr "Petugas (Konselor/Wakil Kepala Sekolah)"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__description
+msgid "One-sentence description of what happened (Master Log column E, the WHAT element)."
+msgstr "Deskripsi satu kalimat tentang apa yang terjadi (kolom E Log Induk, elemen APA)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__evaluation_context
+msgid "Optional Python source, evaluated the same way as the Academic Alert Level's Python Code (safe_eval), used to seed extra local variables BEFORE the level rules run. This is how the actual grade-reading numbers get into the evaluation without this module hard-coding any grade formula: write plain assignments here, e.g. 'trigger_count = 3', and reference 'trigger_count' (or whatever name chosen) from the Academic Alert Level's Python Code."
+msgstr "Kode sumber Python opsional, dievaluasi dengan cara yang sama seperti Kode Python pada Tingkat Peringatan Akademik (safe_eval), yang digunakan untuk menyemai variabel lokal tambahan SEBELUM aturan tingkat dijalankan. Dengan cara inilah angka pembacaan nilai yang sebenarnya masuk ke dalam evaluasi tanpa modul ini menanamkan rumus nilai apa pun: tulis penugasan sederhana di sini, mis. 'trigger_count = 3', dan rujuk 'trigger_count' (atau nama lain yang dipilih) dari Kode Python pada Tingkat Peringatan Akademik."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_academic_alert_level__color__orange
+msgid "Orange"
+msgstr "Oranye"
+
+#. module: ssi_school_incident
+#: model:school_academic_alert_level,name:ssi_school_incident.school_academic_alert_level_orange
+msgid "Orange - Serious Warning"
+msgstr "Oranye - Peringatan Serius"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__resolution_status
+msgid "Outcome of this case from the parent/guardian's side, as distinct from the document workflow state above (Lampiran 4 of the School Guideline). Resolved - Satisfied/Unsatisfied = the case is closed and the parent's satisfaction has been recorded, In Progress = still being handled, Not Resolved = handling concluded without resolving the case, Escalated = moved to a higher handling tier (the escalation transition itself is implemented separately)."
+msgstr "Hasil kasus ini dari sisi orang tua/wali, yang berbeda dari status alur kerja dokumen di atas (Lampiran 4 Panduan Sekolah). Terselesaikan - Puas/Tidak Puas = kasus ditutup dan kepuasan orang tua telah dicatat, Dalam Proses = masih ditangani, Belum Terselesaikan = penanganan berakhir tanpa menyelesaikan kasus, Dieskalasi = dipindahkan ke tingkat penanganan yang lebih tinggi (transisi eskalasinya sendiri diimplementasikan terpisah)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__is_overdue
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_form
+msgid "Overdue"
+msgstr "Terlambat"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__count_overdue
+msgid "Overdue Incidents"
+msgstr "Insiden Terlambat"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__parent_contact_count
+msgid "Parent Contact Count"
+msgstr "Jumlah Kontak Orang Tua"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__parent_contact_ids
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "Parent Contacts"
+msgstr "Kontak Orang Tua"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__parent_partner_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__parent_partner_id
+msgid "Parent/Guardian Contact"
+msgstr "Kontak Orang Tua/Wali"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__contact_method__phone
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident_parent_contact__contact_method__phone
+msgid "Phone"
+msgstr "Telepon"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__policy_template_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__policy_template_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__policy_template_id
+msgid "Policy Template"
+msgstr "Templat Kebijakan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__create_incident_ok
+msgid "Policy that determines whether a School Incident can be created from this alert, taking into account the current document state and the user's group, as configured in the Policy Template. Business rule enforcement (Orange/Red only) is separate and always applied regardless of this policy."
+msgstr "Kebijakan yang menentukan apakah Insiden Sekolah dapat dibuat dari peringatan ini, dengan memperhitungkan status dokumen saat ini dan grup pengguna, sebagaimana dikonfigurasi pada Templat Kebijakan. Penegakan aturan bisnis (hanya Oranye/Merah) terpisah dan selalu diterapkan terlepas dari kebijakan ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__collect_ok
+msgid "Policy that determines whether the Incidents list can be (re)collected via the Collect button, taking into account the current document state and the user's group, as configured in the Policy Template."
+msgstr "Kebijakan yang menentukan apakah daftar Insiden dapat dikumpulkan (ulang) melalui tombol Kumpulkan, dengan memperhitungkan status dokumen saat ini dan grup pengguna, sebagaimana dikonfigurasi pada Templat Kebijakan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__evaluate_ok
+msgid "Policy that determines whether this alert can be evaluated against the configured Academic Alert Levels, taking into account the current document state and the user's group, as configured in the Policy Template."
+msgstr "Kebijakan yang menentukan apakah peringatan ini dapat dievaluasi terhadap Tingkat Peringatan Akademik yang dikonfigurasi, dengan memperhitungkan status dokumen saat ini dan grup pengguna, sebagaimana dikonfigurasi pada Templat Kebijakan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__escalate_ok
+msgid "Policy that determines whether this case can be escalated to a higher handling tier (via the Escalate wizard), taking into account the current document state and the user's group, as configured in the Policy Template."
+msgstr "Kebijakan yang menentukan apakah kasus ini dapat dieskalasi ke tingkat penanganan yang lebih tinggi (melalui wizard Eskalasi), dengan memperhitungkan status dokumen saat ini dan grup pengguna, sebagaimana dikonfigurasi pada Templat Kebijakan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__python_code
+msgid "Python Code"
+msgstr "Kode Python"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__python_code
+msgid "Python source evaluated with safe_eval against the localdict supplied by the School Academic Alert being evaluated (student, subject note, and any extra variables seeded by that alert's Evaluation Context). Must set a boolean local variable named 'result' that decides whether this level is triggered. Example: result = trigger_count >= 2"
+msgstr "Kode sumber Python yang dievaluasi dengan safe_eval terhadap localdict yang disediakan oleh Peringatan Akademik Sekolah yang sedang dievaluasi (siswa, catatan mata pelajaran, dan variabel tambahan apa pun yang disemai oleh Konteks Evaluasi peringatan tersebut). Harus menetapkan variabel lokal boolean bernama 'result' yang menentukan apakah tingkat ini terpicu. Contoh: result = trigger_count >= 2"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_academic_alert_level__color__red
+msgid "Red"
+msgstr "Merah"
+
+#. module: ssi_school_incident
+#: model:school_academic_alert_level,name:ssi_school_incident.school_academic_alert_level_red
+msgid "Red - Critical Warning"
+msgstr "Merah - Peringatan Kritis"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__reject_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__reject_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__reject_ok
+msgid ""
+"Reject policy\n"
+"\n"
+"* If active user can see and execute 'Reject' button"
+msgstr ""
+"Kebijakan penolakan\n"
+"\n"
+"* Jika aktif, pengguna dapat melihat dan menekan tombol 'Tolak'"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__rejected
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__rejected
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__rejected
+msgid "Rejected"
+msgstr "Ditolak"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "Resolution"
+msgstr "Penyelesaian"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__date_resolved
+msgid "Resolution Date"
+msgstr "Tanggal Penyelesaian"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__resolution_deadline
+msgid "Resolution Deadline"
+msgstr "Batas Waktu Penyelesaian"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__is_resolution_overdue
+msgid "Resolution Overdue"
+msgstr "Penyelesaian Terlambat"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__resolution_status
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_search
+msgid "Resolution Status"
+msgstr "Status Penyelesaian"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__resolution_status__resolved_satisfied
+msgid "Resolved - Satisfied"
+msgstr "Terselesaikan - Puas"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__resolution_status__resolved_unsatisfied
+msgid "Resolved - Unsatisfied"
+msgstr "Terselesaikan - Tidak Puas"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__user_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__user_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__user_id
+msgid "Responsible"
+msgstr "Penanggung Jawab"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__activity_user_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__activity_user_id
+msgid "Responsible User"
+msgstr "Pengguna Penanggung Jawab"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__restart_approval_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__restart_approval_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__restart_approval_ok
+msgid ""
+"Restart approval policy\n"
+"\n"
+"* If active user can see and execute 'Restart Approval' button"
+msgstr ""
+"Kebijakan mulai ulang persetujuan\n"
+"\n"
+"* Jika aktif, pengguna dapat melihat dan menekan tombol 'Mulai Ulang Persetujuan'"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__restart_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__restart_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__restart_ok
+msgid ""
+"Restart policy\n"
+"\n"
+"* If active user can see and execute 'Restart' button"
+msgstr ""
+"Kebijakan mulai ulang\n"
+"\n"
+"* Jika aktif, pengguna dapat melihat dan menekan tombol 'Mulai Ulang'"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_view_form
+msgid "Result"
+msgstr "Hasil"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__reviewer_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__reviewer_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__reviewer_id
+msgid "Reviewer"
+msgstr "Pemeriksa"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__sla_text
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_level_view_form
+msgid "SLA"
+msgstr "SLA"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__chk_sla_breach_identified
+msgid "SLA Breach Identified"
+msgstr "Pelanggaran SLA Telah Diidentifikasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__school_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_search
+msgid "School"
+msgstr "Sekolah"
+
+#. module: ssi_school_incident
+#: model:ir.model,name:ssi_school_incident.model_school_academic_alert
+msgid "School Academic Alert"
+msgstr "Peringatan Akademik Sekolah"
+
+#. module: ssi_school_incident
+#: model:ir.model,name:ssi_school_incident.model_school_incident
+msgid "School Incident"
+msgstr "Insiden Sekolah"
+
+#. module: ssi_school_incident
+#: model:ir.model,name:ssi_school_incident.model_school_incident_parent_contact
+msgid "School Incident Parent Contact"
+msgstr "Kontak Orang Tua Insiden Sekolah"
+
+#. module: ssi_school_incident
+#: model:ir.model,name:ssi_school_incident.model_school_incident_weekly_review
+msgid "School Incident Weekly Review"
+msgstr "Tinjauan Mingguan Insiden Sekolah"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__incident_id
+msgid "School Incident created from this alert via the Create Incident button. Only ever set for Orange/Red alerts."
+msgstr "Insiden Sekolah yang dibuat dari peringatan ini melalui tombol Buat Insiden. Hanya pernah diisi untuk peringatan Oranye/Merah."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__incident_ids
+msgid "School Incident records included in this review. Never editable directly: populated only by the Collect button (action_collect_incidents), which re-runs the Date Start/Date End/School criteria and replaces the whole list. This keeps the review from being coupled to incident management itself -- it only ever reads/references incidents, never creates, edits, or cancels them."
+msgstr "Catatan Insiden Sekolah yang disertakan dalam tinjauan ini. Tidak pernah dapat diubah langsung: hanya diisi oleh tombol Kumpulkan (action_collect_incidents), yang menjalankan ulang kriteria Tanggal Mulai/Tanggal Akhir/Sekolah dan mengganti seluruh daftar. Hal ini menjaga agar tinjauan tidak terikat pada pengelolaan insiden itu sendiri -- tinjauan hanya membaca/merujuk insiden, tidak pernah membuat, mengubah, atau membatalkannya."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__school_id
+msgid "School/unit this Weekly Case Review is scoped to. Used by the Collect button to only pull in School Incidents whose Student belongs to this School. Leave empty to review all Schools/units together."
+msgstr "Sekolah/unit yang menjadi cakupan Tinjauan Kasus Mingguan ini. Digunakan oleh tombol Kumpulkan untuk hanya menarik Insiden Sekolah yang Siswanya termasuk dalam Sekolah ini. Biarkan kosong untuk meninjau semua Sekolah/unit sekaligus."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__sequence
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__sequence
+msgid "Sequence"
+msgstr "Urutan"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_level_view_form
+msgid "Severity"
+msgstr "Tingkat Keparahan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__sequence
+msgid "Severity ordering, NOT display ordering: higher value means a MORE severe level, and levels are evaluated from the highest sequence down to the lowest so the most severe rule is always checked first. The first level whose Python Code triggers wins (e.g. Red=30, Orange=20, Yellow=10)."
+msgstr "Urutan tingkat keparahan, BUKAN urutan tampilan: nilai yang lebih tinggi berarti tingkat yang LEBIH parah, dan tingkat dievaluasi dari urutan tertinggi ke terendah sehingga aturan paling parah selalu diperiksa lebih dahulu. Tingkat pertama yang Kode Python-nya terpicu akan menang (mis. Merah=30, Oranye=20, Kuning=10)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__date_start
+msgid "Start of the week (or other period) this review covers. School Incidents with an Incident Date on or after this date are eligible to be pulled in by the Collect button."
+msgstr "Awal pekan (atau periode lain) yang dicakup tinjauan ini. Insiden Sekolah dengan Tanggal Insiden pada atau setelah tanggal ini dapat ditarik oleh tombol Kumpulkan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__open_ok
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__open_ok
+msgid ""
+"Start policy\n"
+"\n"
+"* If active user can see and execute 'Start' button"
+msgstr ""
+"Kebijakan mulai\n"
+"\n"
+"* Jika aktif, pengguna dapat melihat dan menekan tombol 'Mulai'"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__state
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__state
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__state
+msgid "State"
+msgstr "Status"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__activity_state
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__activity_state
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__activity_state
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__activity_state
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__activity_state
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Status berdasarkan aktivitas\n"
+"Terlambat: Tanggal jatuh tempo sudah lewat\n"
+"Hari ini: Tanggal aktivitas adalah hari ini\n"
+"Terencana: Aktivitas mendatang."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__student_id
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__student_id
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_view_search
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_search
+msgid "Student"
+msgstr "Siswa"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__subject_note
+msgid "Subject Note"
+msgstr "Catatan Mata Pelajaran"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__summary
+msgid "Summary"
+msgstr "Ringkasan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_parent_contact__summary
+msgid "Summary of what was communicated during this contact. Structure the note using the Empathy -> Facts -> Solution framework from the School Incident & Parent Complaint Handling Guideline: first acknowledge the parent's feelings (Empathy), then state the confirmed facts of the case (Facts), then describe the concrete resolution or next step offered (Solution)."
+msgstr "Ringkasan hal yang dikomunikasikan selama kontak ini. Susun catatan menggunakan kerangka Empati -> Fakta -> Solusi dari Panduan Penanganan Insiden & Keluhan Orang Tua Sekolah: pertama akui perasaan orang tua (Empati), lalu sampaikan fakta kasus yang telah dikonfirmasi (Fakta), kemudian jelaskan penyelesaian atau langkah berikutnya yang konkret yang ditawarkan (Solusi)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__target_level
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__target_level
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_escalation_criteria_view_search
+msgid "Target Level"
+msgstr "Tingkat Tujuan"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__incident_type_id
+msgid "The category/type of incident or parent complaint being logged (Master Log column D)."
+msgstr "Kategori/jenis insiden atau keluhan orang tua yang dicatat (kolom D Log Induk)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__contact_method
+msgid "The channel used to make first contact with the parties involved in this case (Master Log column I)."
+msgstr "Saluran yang digunakan untuk melakukan kontak pertama dengan pihak-pihak yang terlibat dalam kasus ini (kolom I Log Induk)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_parent_contact__contact_method
+msgid "The channel used to make this particular contact."
+msgstr "Saluran yang digunakan untuk melakukan kontak ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__date_incident
+msgid "The date the incident or parent complaint case occurred (Master Log column A)."
+msgstr "Tanggal kasus insiden atau keluhan orang tua terjadi (kolom A Log Induk)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__date_alert
+msgid "The date this academic warning check is being performed for the student. Used as the sequence date field when a document number is generated."
+msgstr "Tanggal pemeriksaan peringatan akademik ini dilakukan untuk siswa. Digunakan sebagai bidang tanggal urutan saat nomor dokumen dibuat."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__handling_level
+msgid "The handling tier currently assigned to this case (Master Log column F). Automatically defaulted from the selected Incident Type, but can still be adjusted per case."
+msgstr "Tingkat penanganan yang saat ini ditugaskan untuk kasus ini (kolom F Log Induk). Otomatis diisi default dari Jenis Insiden yang dipilih, tetapi tetap dapat disesuaikan per kasus."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_escalate_incident__target_level
+msgid "The handling tier this case will be escalated to."
+msgstr "Tingkat penanganan tujuan eskalasi kasus ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_escalate_incident__incident_id
+msgid "The incident case being escalated."
+msgstr "Kasus insiden yang dieskalasi."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_parent_contact__incident_id
+msgid "The incident case this parent contact log entry belongs to."
+msgstr "Kasus insiden tempat entri log kontak orang tua ini berada."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__parent_partner_id
+msgid "The parent or guardian contact to be notified about this case. Automatically defaulted from the student's Father, Mother, or Guardian contact (in that order of preference) when the Student is selected, but can still be changed manually."
+msgstr "Kontak orang tua atau wali yang akan diberi tahu tentang kasus ini. Otomatis diisi default dari kontak Ayah, Ibu, atau Wali siswa (berurutan sesuai preferensi) saat Siswa dipilih, tetapi tetap dapat diubah secara manual."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_parent_contact__parent_partner_id
+msgid "The parent or guardian contacted. Automatically defaulted from the incident's Parent/Guardian Contact when the Incident is selected, but can still be changed manually (e.g. when a different family member was reached)."
+msgstr "Orang tua atau wali yang dihubungi. Otomatis diisi default dari Kontak Orang Tua/Wali pada insiden saat Insiden dipilih, tetapi tetap dapat diubah secara manual (mis. saat anggota keluarga lain yang berhasil dihubungi)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__handled_by_id
+msgid "The staff member responsible for handling this case (Master Log column J). Defaults to the user who logged the case."
+msgstr "Staf yang bertanggung jawab menangani kasus ini (kolom J Log Induk). Default-nya pengguna yang mencatat kasus."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_parent_contact__contacted_by_id
+msgid "The staff member who made this particular contact."
+msgstr "Staf yang melakukan kontak ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__student_id
+msgid "The student involved in this incident case (Master Log column B/C, the WHO element)."
+msgstr "Siswa yang terlibat dalam kasus insiden ini (kolom B/C Log Induk, elemen SIAPA)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__student_id
+msgid "The student whose academic standing is being evaluated."
+msgstr "Siswa yang kedudukan akademiknya dievaluasi."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__enrollment_id
+msgid "The student's active (open) enrollment, automatically populated when the Student is selected."
+msgstr "Pendaftaran aktif (terbuka) siswa, otomatis diisi saat Siswa dipilih."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__grade_class_id
+msgid "The student's homeroom class at the time of the incident, automatically derived from the student's active enrollment."
+msgstr "Kelas wali siswa pada saat insiden, otomatis diturunkan dari pendaftaran aktif siswa."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__grade_class_id
+msgid "The student's homeroom class at the time of this alert, automatically derived from the student's active enrollment when the Student is selected."
+msgstr "Kelas wali siswa pada saat peringatan ini, otomatis diturunkan dari pendaftaran aktif siswa saat Siswa dipilih."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__handling_level__1
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident_type__default_handling_level__1
+msgid "Tier 1 - Homeroom Teacher"
+msgstr "Tingkat 1 - Wali Kelas"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__handling_level__2
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident_type__default_handling_level__2
+msgid "Tier 2 - Counselor/Vice Principal"
+msgstr "Tingkat 2 - Konselor/Wakil Kepala Sekolah"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__handling_level__3
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident_type__default_handling_level__3
+msgid "Tier 3 - Principal"
+msgstr "Tingkat 3 - Kepala Sekolah"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_form
+msgid "Total"
+msgstr "Total"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__count_total
+msgid "Total Incidents"
+msgstr "Total Insiden"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__count_total
+msgid "Total number of School Incidents currently collected into this review."
+msgstr "Jumlah total Insiden Sekolah yang saat ini dikumpulkan ke dalam tinjauan ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__name
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__name
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__name
+msgid ""
+"Transaction/document number\n"
+"\n"
+"* Unique indentifer of transaction\n"
+"* Leave '/' to automatically generate number\n"
+"* Change '/' into any number/identifier to manually assign number.\n"
+"  Manual number assignment can be done in 'Draft' state\n"
+"  Only user with 'Can Manualy Assign Number' policy can manually assign number.\n"
+"* Transaction with number other than '/' can not be deleted."
+msgstr ""
+"Nomor transaksi/dokumen\n"
+"\n"
+"* Pengenal unik transaksi\n"
+"* Biarkan '/' untuk membuat nomor secara otomatis\n"
+"* Ubah '/' menjadi nomor/pengenal apa pun untuk menetapkan nomor secara manual.\n"
+"  Penetapan nomor manual dapat dilakukan pada status 'Draf'\n"
+"  Hanya pengguna dengan kebijakan 'Dapat Memasukkan Nomor Dokumen Manual' yang dapat menetapkan nomor secara manual.\n"
+"* Transaksi dengan nomor selain '/' tidak dapat dihapus."
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_level_view_form
+msgid "Trigger"
+msgstr "Pemicu"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_academic_alert_level_view_form
+msgid "Trigger Rule"
+msgstr "Aturan Pemicu"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_parent_contact__is_first_contact
+msgid "True for the contact log entry with the earliest Contact Date & Time among all parent contact entries of the same incident; False for every other (later) entry."
+msgstr "Benar untuk entri log kontak dengan Tanggal & Waktu Kontak paling awal di antara semua entri kontak orang tua pada insiden yang sama; Salah untuk setiap entri lainnya (yang lebih akhir)."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__is_first_contact_overdue
+msgid "True when no First Contact Date has been recorded yet and the current date/time is past the First Contact Deadline."
+msgstr "Benar bila belum ada Tanggal Kontak Pertama yang tercatat dan tanggal/waktu saat ini telah melewati Batas Waktu Kontak Pertama."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__is_resolution_overdue
+msgid "True when the case has not reached a Resolved outcome yet and the current date/time is past the Resolution Deadline."
+msgstr "Benar bila kasus belum mencapai hasil Terselesaikan dan tanggal/waktu saat ini telah melewati Batas Waktu Penyelesaian."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__is_overdue
+msgid "True when this case is overdue on either its First Contact or its Resolution SLA. Stored so it can be used in list view decorations and in search filters/group-by."
+msgstr "Benar bila kasus ini terlambat pada SLA Kontak Pertama atau SLA Penyelesaiannya. Disimpan agar dapat digunakan pada dekorasi tampilan daftar serta filter pencarian/pengelompokan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__activity_exception_decoration
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Jenis aktivitas pengecualian yang tercatat."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_unread
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_unread
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_unread
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_unread
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_unread
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_unread
+msgid "Unread Messages"
+msgstr "Pesan yang Belum Dibaca"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__message_unread_counter
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Penghitung Pesan yang Belum Dibaca"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_incident_user_group
+msgid "User (Homeroom Teacher)"
+msgstr "Pengguna (Wali Kelas)"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__user_id
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__user_id
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__user_id
+msgid ""
+"User that responsible for document\n"
+"\n"
+"* Create user can be different with responsible user\n"
+"* Automatically filled with user that initiate document creation.\n"
+"  Default responsible can be changed."
+msgstr ""
+"Pengguna yang bertanggung jawab atas dokumen\n"
+"\n"
+"* Pengguna pembuat dapat berbeda dengan pengguna penanggung jawab\n"
+"* Otomatis terisi dengan pengguna yang memulai pembuatan dokumen.\n"
+"  Penanggung jawab default dapat diubah."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__reviewer_id
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__reviewer_id
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__reviewer_id
+msgid ""
+"User that responsible to review document\n"
+"\n"
+"* Unless it configured to approve reviewer does not equal to approver"
+msgstr ""
+"Pengguna yang bertanggung jawab memeriksa dokumen\n"
+"\n"
+"* Kecuali dikonfigurasi untuk menyetujui, pemeriksa tidak sama dengan penyetuju"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__escalated_by_id
+msgid "User who performed the most recent escalation of this case."
+msgstr "Pengguna yang melakukan eskalasi terakhir kasus ini."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__active_approver_user_ids
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__active_approver_user_ids
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__active_approver_user_ids
+msgid "Users that can approve/reject document"
+msgstr "Pengguna yang dapat menyetujui/menolak dokumen"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__verification_method
+msgid "Verification Method"
+msgstr "Metode Verifikasi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__color
+msgid "Warning color of the triggered Alert Level, kept in sync for use in list view decorations and search filters/group-by."
+msgstr "Warna peringatan dari Tingkat Peringatan yang terpicu, disinkronkan untuk digunakan pada dekorasi tampilan daftar serta filter pencarian/pengelompokan."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__color
+msgid "Warning color of this level in the Three-Color Academic Warning System (Bab 8.3 of the School Guideline): Yellow = early warning, Orange = serious warning, Red = critical warning. Only Orange and Red levels are allowed to generate a School Incident from a School Academic Alert."
+msgstr "Warna peringatan tingkat ini dalam Sistem Peringatan Akademik Tiga Warna (Bab 8.3 Panduan Sekolah): Kuning = peringatan dini, Oranye = peringatan serius, Merah = peringatan kritis. Hanya tingkat Oranye dan Merah yang diizinkan menghasilkan Insiden Sekolah dari Peringatan Akademik Sekolah."
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_academic_alert_level__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_escalation_criteria__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__website_message_ids
+#: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__website_message_ids
+msgid "Website Messages"
+msgstr "Pesan Situs Web"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__website_message_ids
+#: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__website_message_ids
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident__website_message_ids
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_escalation_criteria__website_message_ids
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_type__website_message_ids
+#: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__website_message_ids
+msgid "Website communication history"
+msgstr "Riwayat komunikasi situs web"
+
+#. module: ssi_school_incident
+#: model:ir.actions.act_window,name:ssi_school_incident.school_incident_weekly_review_action
+#: model:ir.ui.menu,name:ssi_school_incident.school_incident_weekly_review_menu
+msgid "Weekly Case Reviews"
+msgstr "Tinjauan Kasus Mingguan"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_weekly_review_view_form
+msgid "Weekly Review Checklist"
+msgstr "Daftar Periksa Tinjauan Mingguan"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_incident_weekly_review_user_group
+msgid "Weekly Review User"
+msgstr "Pengguna Tinjauan Mingguan"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_incident_weekly_review_validator_group
+msgid "Weekly Review Validator"
+msgstr "Validator Tinjauan Mingguan"
+
+#. module: ssi_school_incident
+#: model:res.groups,name:ssi_school_incident.school_incident_weekly_review_viewer_group
+msgid "Weekly Review Viewer"
+msgstr "Penampil Tinjauan Mingguan"
+
+#. module: ssi_school_incident
+#: model_terms:ir.ui.view,arch_db:ssi_school_incident.school_incident_view_form
+msgid "What Happened"
+msgstr "Apa yang Terjadi"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident__contact_method__whatsapp
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_incident_parent_contact__contact_method__whatsapp
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#. module: ssi_school_incident
+#: model:ir.model.fields.selection,name:ssi_school_incident.selection__school_academic_alert_level__color__yellow
+msgid "Yellow"
+msgstr "Kuning"
+
+#. module: ssi_school_incident
+#: model:school_academic_alert_level,name:ssi_school_incident.school_academic_alert_level_yellow
+msgid "Yellow - Early Warning"
+msgstr "Kuning - Peringatan Dini"
