@@ -598,7 +598,7 @@ msgstr "Mengonfirmasi bahwa setiap kasus yang dihitung dalam 'Insiden Terlambat'
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident_weekly_review__chk_master_log_updated
 msgid "Confirms that the school_incident Master Log has been kept up to date for the period under review (Agenda 1 of the Weekly Case Review): every case that occurred in the period has a corresponding School Incident record."
-msgstr "Mengonfirmasi bahwa Log Induk school_incident telah diperbarui untuk periode yang ditinjau (Agenda 1 Tinjauan Kasus Mingguan): setiap kasus yang terjadi pada periode tersebut memiliki catatan Insiden Sekolah yang sesuai."
+msgstr "Mengonfirmasi bahwa Master Log school_incident telah diperbarui untuk periode yang ditinjau (Agenda 1 Tinjauan Kasus Mingguan): setiap kasus yang terjadi pada periode tersebut memiliki catatan Insiden Sekolah yang sesuai."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_parent_contact__contact_datetime
@@ -663,7 +663,7 @@ msgstr "Tanggal dan waktu eskalasi terakhir kasus ini."
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__date_first_contact
 msgid "Date and time the assigned handler first contacted the parties involved in this case (Master Log column H). Automatically kept in sync with the earliest entry in the Parent Contacts log below whenever that log is not empty; manually editable as a fallback while no log entries have been recorded yet."
-msgstr "Tanggal dan waktu penangan yang ditugaskan pertama kali menghubungi pihak-pihak yang terlibat dalam kasus ini (kolom H Log Induk). Otomatis disinkronkan dengan entri paling awal pada log Kontak Orang Tua di bawah selama log tersebut tidak kosong; dapat diubah manual sebagai cadangan selama belum ada entri log yang tercatat."
+msgstr "Tanggal dan waktu penangan yang ditugaskan pertama kali menghubungi pihak-pihak yang terlibat dalam kasus ini (kolom H Master Log). Otomatis disinkronkan dengan entri paling awal pada log Kontak Orang Tua di bawah selama log tersebut tidak kosong; dapat diubah manual sebagai cadangan selama belum ada entri log yang tercatat."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident_parent_contact__contact_datetime
@@ -673,7 +673,7 @@ msgstr "Tanggal dan waktu kontak ini dengan orang tua/wali berlangsung."
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__date_resolved
 msgid "Date this case was resolved (Master Log column L). Required once Resolution Status is set to one of the Resolved values."
-msgstr "Tanggal kasus ini diselesaikan (kolom L Log Induk). Wajib diisi setelah Status Penyelesaian ditetapkan ke salah satu nilai Terselesaikan."
+msgstr "Tanggal kasus ini diselesaikan (kolom L Master Log). Wajib diisi setelah Status Penyelesaian ditetapkan ke salah satu nilai Terselesaikan."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_type__default_handling_level
@@ -699,7 +699,7 @@ msgstr "Deskripsi cara memverifikasi bahwa kriteria eskalasi ini terpenuhi untuk
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__action_taken
 msgid "Description of the concrete action(s) taken to handle this case (the ACTION element of the Master Log)."
-msgstr "Deskripsi tindakan konkret yang diambil untuk menangani kasus ini (elemen TINDAKAN pada Log Induk)."
+msgstr "Deskripsi tindakan konkret yang diambil untuk menangani kasus ini (elemen TINDAKAN pada Master Log)."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,field_description:ssi_school_incident.field_escalate_incident__display_name
@@ -1231,7 +1231,7 @@ msgstr "Menandai jenis insiden ini sebagai terkait kesehatan. Insiden terkait ke
 #. module: ssi_school_incident
 #: model:ir.model.fields,field_description:ssi_school_incident.field_school_incident_weekly_review__chk_master_log_updated
 msgid "Master Log Updated"
-msgstr "Log Induk Diperbarui"
+msgstr "Master Log Diperbarui"
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert_level__active
@@ -1480,7 +1480,7 @@ msgstr "Petugas (Konselor/Wakil Kepala Sekolah)"
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__description
 msgid "One-sentence description of what happened (Master Log column E, the WHAT element)."
-msgstr "Deskripsi satu kalimat tentang apa yang terjadi (kolom E Log Induk, elemen APA)."
+msgstr "Deskripsi satu kalimat tentang apa yang terjadi (kolom E Master Log, elemen APA)."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__evaluation_context
@@ -1838,12 +1838,12 @@ msgstr "Tingkat Tujuan"
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__incident_type_id
 msgid "The category/type of incident or parent complaint being logged (Master Log column D)."
-msgstr "Kategori/jenis insiden atau keluhan orang tua yang dicatat (kolom D Log Induk)."
+msgstr "Kategori/jenis insiden atau keluhan orang tua yang dicatat (kolom D Master Log)."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__contact_method
 msgid "The channel used to make first contact with the parties involved in this case (Master Log column I)."
-msgstr "Saluran yang digunakan untuk melakukan kontak pertama dengan pihak-pihak yang terlibat dalam kasus ini (kolom I Log Induk)."
+msgstr "Saluran yang digunakan untuk melakukan kontak pertama dengan pihak-pihak yang terlibat dalam kasus ini (kolom I Master Log)."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident_parent_contact__contact_method
@@ -1853,7 +1853,7 @@ msgstr "Saluran yang digunakan untuk melakukan kontak ini."
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__date_incident
 msgid "The date the incident or parent complaint case occurred (Master Log column A)."
-msgstr "Tanggal kasus insiden atau keluhan orang tua terjadi (kolom A Log Induk)."
+msgstr "Tanggal kasus insiden atau keluhan orang tua terjadi (kolom A Master Log)."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__date_alert
@@ -1863,7 +1863,7 @@ msgstr "Tanggal pemeriksaan peringatan akademik ini dilakukan untuk siswa. Digun
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__handling_level
 msgid "The handling tier currently assigned to this case (Master Log column F). Automatically defaulted from the selected Incident Type, but can still be adjusted per case."
-msgstr "Tingkat penanganan yang saat ini ditugaskan untuk kasus ini (kolom F Log Induk). Otomatis diisi default dari Jenis Insiden yang dipilih, tetapi tetap dapat disesuaikan per kasus."
+msgstr "Tingkat penanganan yang saat ini ditugaskan untuk kasus ini (kolom F Master Log). Otomatis diisi default dari Jenis Insiden yang dipilih, tetapi tetap dapat disesuaikan per kasus."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_escalate_incident__target_level
@@ -1893,7 +1893,7 @@ msgstr "Orang tua atau wali yang dihubungi. Otomatis diisi default dari Kontak O
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__handled_by_id
 msgid "The staff member responsible for handling this case (Master Log column J). Defaults to the user who logged the case."
-msgstr "Staf yang bertanggung jawab menangani kasus ini (kolom J Log Induk). Default-nya pengguna yang mencatat kasus."
+msgstr "Staf yang bertanggung jawab menangani kasus ini (kolom J Master Log). Default-nya pengguna yang mencatat kasus."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident_parent_contact__contacted_by_id
@@ -1903,7 +1903,7 @@ msgstr "Staf yang melakukan kontak ini."
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_incident__student_id
 msgid "The student involved in this incident case (Master Log column B/C, the WHO element)."
-msgstr "Siswa yang terlibat dalam kasus insiden ini (kolom B/C Log Induk, elemen SIAPA)."
+msgstr "Siswa yang terlibat dalam kasus insiden ini (kolom B/C Master Log, elemen SIAPA)."
 
 #. module: ssi_school_incident
 #: model:ir.model.fields,help:ssi_school_incident.field_school_academic_alert__student_id
